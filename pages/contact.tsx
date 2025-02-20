@@ -22,29 +22,28 @@ const Contact = () => {
 
   // Formular senden (mit EmailJS)
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus("sending");
-
-    try {
-      // EmailJS API-Call zum Senden der Nachricht
-      const response = await emailjs.send(
-        "your_service_id", // Deine Service-ID (wird von EmailJS bereitgestellt)
-        "your_template_id", // Deine Template-ID (wird von EmailJS bereitgestellt)
-        formData, // Die Formulardaten, die gesendet werden
-        "your_user_id" // Deine User-ID (wird von EmailJS bereitgestellt)
-      );
-
-      if (response.status === 200) {
-        setStatus("success");
-        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-      } else {
-        setStatus("error");
-      }
-    } catch (error) {
-      console.error("Fehler beim Senden:", error);
-      setStatus("error");
-    }
-  };
+		e.preventDefault();
+		setStatus("sending");
+	
+		try {
+			const response = await emailjs.send(
+				"service_92r8txc", // Service-ID von EmailJS
+				"template_c91k9rl", // Template-ID von EmailJS
+				formData, // Die Formulardaten, die an das Template übergeben werden
+				"WaiL_NoHkEDIqd3FQ" // Deine User-ID von EmailJS
+			);
+	
+			if (response.status === 200) {
+				setStatus("success");
+				setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+			} else {
+				setStatus("error");
+			}
+		} catch (error) {
+			console.error("Fehler beim Senden:", error);
+			setStatus("error");
+		}
+	};
 
   return (
     <div>
