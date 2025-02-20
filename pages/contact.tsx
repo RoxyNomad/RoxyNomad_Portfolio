@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import contactStyles from "@/styles/contact.module.css";
+import emailjs from "emailjs-com"; // Importiere EmailJS
 
 const Contact = () => {
   // State für Formulardaten
@@ -19,19 +20,21 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Formular senden
+  // Formular senden (mit EmailJS)
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      // EmailJS API-Call zum Senden der Nachricht
+      const response = await emailjs.send(
+        "your_service_id", // Deine Service-ID (wird von EmailJS bereitgestellt)
+        "your_template_id", // Deine Template-ID (wird von EmailJS bereitgestellt)
+        formData, // Die Formulardaten, die gesendet werden
+        "your_user_id" // Deine User-ID (wird von EmailJS bereitgestellt)
+      );
 
-      if (response.ok) {
+      if (response.status === 200) {
         setStatus("success");
         setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
       } else {
