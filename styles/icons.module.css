@@ -1,0 +1,113 @@
+.contactIconsOne {
+	display: flex;
+	justify-content: space-between;
+	margin: 7vh 14vw;
+}
+
+.githubIcon, .codepenIcon {
+	background-color:  #ffffff;
+	border-radius: 12vh;
+}
+
+.whatsappIcon, .telegramIcon {
+	margin-top: 14vh;
+	scale: 1.1;
+}
+
+.contactIconsTwo {
+	display: flex;
+	justify-content: space-between;
+	margin: 5vh 14vw;
+}
+
+.discordIcon {
+	scale: 1.1;
+}
+
+.linkedInIcon:hover, .githubIcon:hover, .codepenIcon:hover, .youtubeIcon:hover, .instagramIcon:hover, .facebookIcon:hover  {
+	scale: 1.2;
+}
+
+.whatsappIcon:hover, .telegramIcon:hover, .discordIcon:hover {
+	scale: 1.3;
+}
+
+@media (max-width: 1920px) {
+	.contactIconsOne, .contactIconsTwo {
+		scale: 0.5;
+		margin: 1vh -14vw;
+	}
+
+	.whatsappIcon, .telegramIcon {
+		scale: 0.55;
+	}
+
+	.whatsappIcon:hover, .telegramIcon:hover {
+		scale: 0.65;
+	}
+}
+
+@media (max-width: 1366px) and (orientation: landscape) {
+	.contactIconsOne, .contactIconsTwo {
+		scale: 0.35;
+		margin: -2.5vh -49vw;
+	}
+
+	.whatsappIcon, .telegramIcon {
+		scale: 0.35;
+		margin-top: 9vh;
+	}
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+	.contactIconsOne, .contactIconsTwo {
+		scale: 0.35;
+		margin: 1.5vh -70vw;
+	}
+
+	.whatsappIcon, .telegramIcon {
+		scale: 0.35;
+		margin-top: 16vh;
+	}
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+	.contactIconsOne, .contactIconsTwo {
+		scale: 0.25;
+		margin: -1vh -100vw;
+	}
+
+	.whatsappIcon, .telegramIcon {
+		scale: 0.25;
+		margin-top: 16vh;
+	}
+}
+
+@media (max-width: 854px) and (orientation: landscape) {
+	.contactIconsOne, .contactIconsTwo {
+		scale: 0.25;
+		margin: -2.5vh -106vw;
+	}
+
+	.whatsappIcon, .telegramIcon {
+		scale: 0.25;
+		margin-top: 12vh;
+	}
+
+	.githubIcon, .codepenIcon {
+		border-radius: 25vh;
+	}
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+	.contactIconsOne, .contactIconsTwo {
+		scale: 0.2;
+		margin: -8vh -150vw;
+	}
+
+	.whatsappIcon, .telegramIcon {
+		scale: 0.2;
+		margin-top: -8vh;
+		margin-bottom: -8vh;
+	}
+}

@@ -1,0 +1,281 @@
+.header {
+	position: fixed;
+	margin: 0;
+	height: 7.3vh;
+	background: linear-gradient(to right, rgba(0, 51, 102, 1) 10%, rgba(85, 107, 47, 1));
+	z-index: 1;
+}
+
+.navbar {
+	position: relative;
+	width: 100vw;
+}
+
+.navbarTitleOne {
+	left: 25%;
+	transform: translate(-75%);
+}
+
+.navbarTitleTwo {
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.navbarTitleThree {
+	left: 75%;
+	transform: translate(-25%);
+}
+
+.navbarTitleOne, .navbarTitleTwo, .navbarTitleThree {
+	position: absolute;
+	font-family: Orbitron, Verdana, sans-serif;
+	font-size: 4vh;
+	text-decoration: none;
+	color: #c9b79b;
+	border: 0.2vh solid #4fd8d6;
+	border-radius: 3vh;
+	padding: 1vh;
+}
+
+.navbarTitleOne:hover, .navbarTitleTwo:hover, .navbarTitleThree:hover {
+	background-color: rgba(79, 216, 214, 0.1);
+}
+
+.aboutMeContainer {
+	display: flex;
+	margin: 0 2vw;
+	margin-bottom: 10vh;
+	gap: 2vw;
+}
+
+.portraitContainer {
+	margin-top: 25vh;
+}
+
+.portrait {
+	width: 16.9vw;
+	height: 47vh;
+	border-radius: 3vh;
+	border: 0.2vh solid #4fd8d6;
+}
+
+.aboutMeTextContainer {
+	margin-top: 14vh;
+	border: 0.2vh solid #4fd8d6;
+	border-radius: 3vh;
+	padding: 1vh;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.aboutMeSubtitle {
+	font-size: 3vh;
+	margin: 0;
+}
+
+.aboutMeText {
+	font-size: 2vh;
+}
+
+.aboutMeSubtitle, .aboutMeText {
+	font-family: Orbitron, Verdana, sans-serif;
+	color:#4fd8d6;
+	text-shadow: 1px 1px 4px #4fd8d6;
+}
+
+.footerContainer {
+	border: 0.2vh solid #4fd8d6;
+	border-radius: 3vh;
+	margin: 2vw;
+	padding: 1vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 85vh;
+}
+
+.contactDataContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 13vw;
+}
+
+.contactTitle, .contactData, .contactMailTitle, .contactMail, .contactNumberTitle, .contactNumber, .contactFormularTitle, .contactFormularButton {
+	font-family: Orbitron, Verdana, sans-serif;
+	font-size: 2vh;
+	color: #4fd8d6;
+	display: flex;
+	justify-content: center;
+	text-shadow: 1px 1px 4px #4fd8d6;
+	text-decoration: none;
+}
+
+.contactMail, .contactNumber {
+	text-decoration: none;
+}
+
+.contactFormularTitle {
+	font-size: 3vh;
+	gap: 1vw;
+}
+
+.contactFormularButton {
+	font-size: 3vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 0.2vh solid #4fd8d6;
+	border-radius: 3vh;
+	padding: 0 1vh;
+}
+
+.contactFormularButton:hover {
+	background-color: #4fd8d6;
+	color: black;
+}
+
+/* 1080p resolution */
+@media (max-width: 1920px) {
+	.contactDataContainer {
+		gap: 7vw;
+	}
+}
+
+/* IPad pro 12.9 Inch resolution */
+@media (max-width: 1366px) and (orientation: landscape) {
+	.portrait {
+		width: 23vw;
+	}
+
+	.aboutMeTextContainer {
+		margin-top: 9vh;
+	}
+
+	.contactDataContainer {
+		gap: 3vw;
+	}
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+	.navbarTitle {
+		font-size: 3vh;
+	}
+	
+	.aboutMeContainer {
+		flex-direction: column;
+	}
+
+	.portraitContainer{
+		margin: 0 auto;
+		margin-top: 8vh;
+	}
+	.portrait {
+		width: 27.5vw;
+		height: 30vh;
+	}
+
+	.aboutMeTextContainer {
+		margin-top: 0;
+	}
+
+	.aboutMeSubtitle {
+		font-size: 2vh;
+	}
+
+	.aboutMeText {
+		font-size: 1.5vh;
+		margin: 0.7vh auto;
+	}
+
+	.contactDataContainer {
+		gap: 8vw;
+	}
+	.contactFormularTitle {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+/* IPad pro 11 Inch resolution */
+@media (max-width: 834px) and (orientation: portrait) {
+	.contactDataContainer {
+		gap: 4vw;
+	}
+}
+
+/* IPad Mini resolution */
+@media (max-width: 1024px) and (orientation: landscape) {
+	.contactDataContainer {
+		gap: 0;
+	}
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+	.contactDataContainer {
+		gap: 1vw;
+	}
+}
+
+/* Smartphone resolution */
+@media (max-width: 854px) and (orientation: landscape) {
+	.header {
+		height: 12vh;
+	}
+	
+	.navbarTitleOne, .navbarTitleTwo, .navbarTitleThree {
+		font-size: 7vh;
+	}
+	
+	.portraitContainer, .aboutMeTextContainer {
+		margin-top: 15vh;
+	}
+	
+	.portrait {
+		width: 25vw;
+		height: 80vh;
+	}
+
+	.aboutMeSubtitle {
+		font-size: 5vh;
+	}
+
+	.aboutMeText {
+		font-size: 4vh;
+	}
+
+	.footerContainer {
+		height: 185vh;
+	}
+
+	.contactTitle, .contactData, .contactMailTitle, .contactMail, .contactNumberTitle, .contactNumber, .contactFormularTitle, .contactFormularButton {
+		font-size: 4vh;
+	}
+
+	.contactFormularTitle, .contactFormularButton {
+		font-size: 5vh;
+	}
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+	.header {
+		height: 5.4vh;
+	}
+	
+	.navbarTitleOne, .navbarTitleTwo, .navbarTitleThree {
+		font-size: 2.5vh;
+	}
+	
+	.portrait {
+		width: 46vw;
+	}
+
+	.aboutMeSubtitle {
+		font-size: 2.5vh;
+	}
+	
+	.aboutMeText {
+		font-size: 2vh;
+	}
+
+	.contactDataContainer {
+		flex-direction: column;
+		gap: 0;
+		align-items: center;
+	}
+}
