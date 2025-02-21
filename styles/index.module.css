@@ -133,7 +133,7 @@
 /* 1080p resolution */
 @media (max-width: 1920px) {
 	.contactDataContainer {
-		gap: 7vw;
+		gap: 8.5vw;
 	}
 }
 

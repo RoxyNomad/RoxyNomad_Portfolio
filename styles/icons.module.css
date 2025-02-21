@@ -1,7 +1,7 @@
 .contactIconsOne {
 	display: flex;
 	justify-content: space-between;
-	margin: 7vh 14vw;
+	margin: 5vh 14vw;
 }
 
 .githubIcon, .codepenIcon {
@@ -10,7 +10,7 @@
 }
 
 .whatsappIcon, .telegramIcon {
-	margin-top: 14vh;
+	margin-top: 16vh;
 	scale: 1.1;
 }
 
@@ -35,15 +35,16 @@
 @media (max-width: 1920px) {
 	.contactIconsOne, .contactIconsTwo {
 		scale: 0.5;
-		margin: 1vh -14vw;
+		margin: 0vh -14vw;
 	}
 
 	.whatsappIcon, .telegramIcon {
-		scale: 0.55;
+		scale: 0.5;
+		margin-top: 12vh;
 	}
 
 	.whatsappIcon:hover, .telegramIcon:hover {
-		scale: 0.65;
+		scale: 0.6;
 	}
 }
 
