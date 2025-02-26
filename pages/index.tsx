@@ -64,19 +64,19 @@ const Index = () => {
 				<footer id="contact" className={indexStyles.footerContainer}>
 					<div className={iconStyles.contactIconsOne}>
 						<Link href='https://www.linkedin.com/in/roxynomad'>
-							<Image src='/pictures/linkedin-icon.png' alt='LinkedIn Icon' width={200} height={200} className={iconStyles.linkedInIcon}/>
+							<Image src='/pictures/linkedin-icon.png' alt='LinkedIn Icon' width={100} height={100} className={iconStyles.linkedInIcon}/>
 						</Link>
 						<Link href='https://github.com/RoxyNomad'>
-							<Image src='/pictures/github-icon.png' alt='GitHub Icon' width={200} height={200} className={iconStyles.githubIcon}/>
+							<Image src='/pictures/github-icon.png' alt='GitHub Icon' width={100} height={100} className={iconStyles.githubIcon}/>
 						</Link>
 						<Link href='https://codepen.io/RoxyNomad'>
-							<Image src='/pictures/codepen-icon.png' alt='CodePen Icon' width={200} height={200} className={iconStyles.codepenIcon}/>
+							<Image src='/pictures/codepen-icon.png' alt='CodePen Icon' width={100} height={100} className={iconStyles.codepenIcon}/>
+						</Link>
+						<Link href='https://wa.me/+41772831236' target='_blank'>
+							<Image src='/pictures/whatsapp-icon.png' alt='WhatsApp Chat' width={100} height={100} className={iconStyles.whatsappIcon}/>
 						</Link>
 					</div>
 					<div className={indexStyles.contactDataContainer}>
-						<Link href='https://wa.me/+41772831236' target='_blank'>
-							<Image src='/pictures/whatsapp-icon.png' alt='WhatsApp Chat' width={200} height={200} className={iconStyles.whatsappIcon}/>
-						</Link>
 						<div className={indexStyles.contactDataSubContainer}>
 							<p className={indexStyles.contactTitle}>Meine Kontaktdaten</p>
 							<p className={indexStyles.contactData}>
@@ -91,19 +91,19 @@ const Index = () => {
 							<Link className={indexStyles.contactNumber} href='tel:+41772831236'>+41 77 283 1236</Link>
 							<p className={indexStyles.contactFormularTitle}>Hier gehts zum <Link href="/contact" className={indexStyles.contactFormularButton} target="_blank">Kontaktformular</Link></p>
 						</div>
-						<Link href='https://t.me/RoxyNomad' target='_blank'>
-							<Image src='/pictures/telegram-icon.png' alt='Chat on Telegram' width={200} height={200} className={iconStyles.telegramIcon}/>
-						</Link>
 					</div>
 					<div className={iconStyles.contactIconsTwo}>
+						<Link href='https://t.me/RoxyNomad' target='_blank'>
+							<Image src='/pictures/telegram-icon.png' alt='Chat on Telegram' width={100} height={100} className={iconStyles.telegramIcon}/>
+						</Link>
 						<Link href='https://www.instagram.com/roxynomad_?igsh=bnpuejdmZ2RmOTVt'>
-							<Image src='/pictures/instagram-icon.png' alt='Instagram Icon' width={200} height={200} className={iconStyles.instagramIcon}/>
+							<Image src='/pictures/instagram-icon.png' alt='Instagram Icon' width={100} height={100} className={iconStyles.instagramIcon}/>
 						</Link>
 						<Link href='https://www.youtube.com/channel/UCq8qe1Z7MuQo0QlRZ-mfpVg'>
-							<Image src='/pictures/youtube-icon.png' alt='YouTube Icon' width={200} height={200} className={iconStyles.youtubeIcon}/>
+							<Image src='/pictures/youtube-icon.png' alt='YouTube Icon' width={100} height={100} className={iconStyles.youtubeIcon}/>
 						</Link>
 						<Link href='https://discord.com/users/1195759676193775682'>
-							<Image src='/pictures/discord-icon.png' alt='Discord Icon' width={200} height={200} className={iconStyles.discordIcon}/>
+							<Image src='/pictures/discord-icon.png' alt='Discord Icon' width={100} height={100} className={iconStyles.discordIcon}/>
 						</Link>
 						
 					</div>

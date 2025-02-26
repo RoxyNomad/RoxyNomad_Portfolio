@@ -1,7 +1,9 @@
-.contactIconsOne {
-	display: flex;
-	justify-content: space-between;
-	margin: 5vh 14vw;
+.linkedInIcon, .whatsappIcon, .telegramIcon, .instagramIcon, .youtubeIcon, .discordIcon, .githubIcon, .codepenIcon {
+	position: absolute;
+}
+
+.linkedInIcon, .githubIcon, .codepenIcon {
+	top: 7%;
 }
 
 .githubIcon, .codepenIcon {
@@ -9,22 +11,33 @@
 	border-radius: 12vh;
 }
 
+.linkedInIcon, .whatsappIcon, .instagramIcon {
+	left: 16%;	
+}
+
+.githubIcon, .youtubeIcon {
+	left: 47.5%;
+}
+
+.codepenIcon, .telegramIcon, .discordIcon {
+	right: 16%;
+}
+
 .whatsappIcon, .telegramIcon {
-	margin-top: 16vh;
+	top: 50%;
+	transform: translateY(-50%);
 	scale: 1.1;
 }
 
-.contactIconsTwo {
-	display: flex;
-	justify-content: space-between;
-	margin: 5vh 14vw;
+.instagramIcon, .youtubeIcon, .discordIcon {
+	bottom: 7%;
 }
 
 .discordIcon {
 	scale: 1.1;
 }
 
-.linkedInIcon:hover, .githubIcon:hover, .codepenIcon:hover, .youtubeIcon:hover, .instagramIcon:hover, .facebookIcon:hover  {
+.linkedInIcon:hover, .githubIcon:hover, .codepenIcon:hover, .youtubeIcon:hover, .instagramIcon:hover {
 	scale: 1.2;
 }
 
@@ -32,83 +45,76 @@
 	scale: 1.3;
 }
 
-@media (max-width: 1920px) {
-	.contactIconsOne, .contactIconsTwo {
-		scale: 0.5;
-		margin: 0vh -14vw;
+@media (min-width: 1921px) {
+	.linkedInIcon, .whatsappIcon, .telegramIcon, .instagramIcon, .youtubeIcon, .discordIcon, .githubIcon, .codepenIcon {
+		scale: 2.5;
+	}
+	
+	.githubIcon, .youtubeIcon {
+		left: 49%;
 	}
 
-	.whatsappIcon, .telegramIcon {
-		scale: 0.5;
-		margin-top: 12vh;
+	.discordIcon {
+		scale: 2.7;
 	}
-
-	.whatsappIcon:hover, .telegramIcon:hover {
-		scale: 0.6;
+	
+	.linkedInIcon:hover, .githubIcon:hover, .codepenIcon:hover, .youtubeIcon:hover, .instagramIcon:hover {
+		scale: 2.7;
+	}
+	
+	.whatsappIcon:hover, .telegramIcon:hover, .discordIcon:hover {
+		scale: 2.9;
 	}
 }
 
 @media (max-width: 1366px) and (orientation: landscape) {
-	.contactIconsOne, .contactIconsTwo {
-		scale: 0.35;
-		margin: -2.5vh -49vw;
-	}
-
-	.whatsappIcon, .telegramIcon {
-		scale: 0.35;
-		margin-top: 9vh;
+	.githubIcon, .youtubeIcon {
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
 
 @media (max-width: 1024px) and (orientation: portrait) {
-	.contactIconsOne, .contactIconsTwo {
-		scale: 0.35;
-		margin: 1.5vh -70vw;
-	}
-
-	.whatsappIcon, .telegramIcon {
-		scale: 0.35;
-		margin-top: 16vh;
-	}
-}
-
-@media (max-width: 768px) and (orientation: portrait) {
-	.contactIconsOne, .contactIconsTwo {
-		scale: 0.25;
-		margin: -1vh -100vw;
-	}
-
-	.whatsappIcon, .telegramIcon {
-		scale: 0.25;
-		margin-top: 16vh;
+	.githubIcon, .youtubeIcon {
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
 
 @media (max-width: 854px) and (orientation: landscape) {
-	.contactIconsOne, .contactIconsTwo {
-		scale: 0.25;
-		margin: -2.5vh -106vw;
+	.linkedInIcon, .whatsappIcon, .telegramIcon, .instagramIcon, .youtubeIcon, .discordIcon, .githubIcon, .codepenIcon {
+		scale: 0.8;
 	}
 
-	.whatsappIcon, .telegramIcon {
-		scale: 0.25;
-		margin-top: 12vh;
+	.githubIcon, .youtubeIcon {
+		left: 49%;
+		transform: translateX(-51%);
 	}
 
-	.githubIcon, .codepenIcon {
-		border-radius: 25vh;
+	.discordIcon {
+		scale: 0.9;
 	}
 }
 
 @media (max-width: 480px) and (orientation: portrait) {
-	.contactIconsOne, .contactIconsTwo {
-		scale: 0.2;
-		margin: -8vh -150vw;
+	.linkedInIcon, .whatsappIcon, .telegramIcon, .instagramIcon, .youtubeIcon, .discordIcon, .githubIcon, .codepenIcon {
+		scale: 0.5;
 	}
 
-	.whatsappIcon, .telegramIcon {
-		scale: 0.2;
-		margin-top: -8vh;
-		margin-bottom: -8vh;
+	.discordIcon {
+		scale: 0.6;
+	}
+
+	.linkedInIcon, .whatsappIcon, .instagramIcon {
+		left: -2%;	
+	}
+	
+	.githubIcon, .youtubeIcon {
+		left: 44%;
+		transform: translateX(-56%);
+	}
+	
+	.codepenIcon, .telegramIcon, .discordIcon {
+		right: -2%;
 	}
 }
