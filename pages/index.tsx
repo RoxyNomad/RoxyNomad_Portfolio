@@ -102,7 +102,7 @@ const Index = () => {
 						<Link href='https://www.instagram.com/roxynomad_?igsh=bnpuejdmZ2RmOTVt'>
 							<Image src='/pictures/instagram-icon.png' alt='Instagram Icon' width={200} height={200} className={iconStyles.instagramIcon}/>
 						</Link>
-						<Link href='https://www.facebook.com/RoxyNomad'>
+						<Link href='https://www.facebook.com/RoxanaZwicky.RoxyNomad'>
 							<Image src='/pictures/facebook-icon.png' alt='Facebook Icon' width={200} height={200} className={iconStyles.facebookIcon}/>
 						</Link>
 						<Link href='https://discord.com/users/1195759676193775682'>
