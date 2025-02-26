@@ -72,9 +72,6 @@ const Index = () => {
 						<Link href='https://codepen.io/RoxyNomad'>
 							<Image src='/pictures/codepen-icon.png' alt='CodePen Icon' width={200} height={200} className={iconStyles.codepenIcon}/>
 						</Link>
-						<Link href='https://www.youtube.com/channel/UCq8qe1Z7MuQo0QlRZ-mfpVg'>
-							<Image src='/pictures/youtube-icon.png' alt='YouTube Icon' width={200} height={200} className={iconStyles.youtubeIcon}/>
-						</Link>
 					</div>
 					<div className={indexStyles.contactDataContainer}>
 						<Link href='https://wa.me/+41772831236' target='_blank'>
@@ -102,8 +99,8 @@ const Index = () => {
 						<Link href='https://www.instagram.com/roxynomad_?igsh=bnpuejdmZ2RmOTVt'>
 							<Image src='/pictures/instagram-icon.png' alt='Instagram Icon' width={200} height={200} className={iconStyles.instagramIcon}/>
 						</Link>
-						<Link href='https://www.facebook.com/RoxanaZwicky.RoxyNomad'>
-							<Image src='/pictures/facebook-icon.png' alt='Facebook Icon' width={200} height={200} className={iconStyles.facebookIcon}/>
+						<Link href='https://www.youtube.com/channel/UCq8qe1Z7MuQo0QlRZ-mfpVg'>
+							<Image src='/pictures/youtube-icon.png' alt='YouTube Icon' width={200} height={200} className={iconStyles.youtubeIcon}/>
 						</Link>
 						<Link href='https://discord.com/users/1195759676193775682'>
 							<Image src='/pictures/discord-icon.png' alt='Discord Icon' width={200} height={200} className={iconStyles.discordIcon}/>
