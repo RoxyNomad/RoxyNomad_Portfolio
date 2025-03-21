@@ -86,7 +86,7 @@ const Index = () => {
 								Schweiz<br />
 							</p>
 							<p className={indexStyles.contactMailTitle}>Schreib mir eine Mail:</p>
-							<Link className={indexStyles.contactMail} href='mailto:roxynomad.dev@gmail.com'>roxynomad.dev@gmail.com</Link>
+							<Link className={indexStyles.contactMail} href='mailto:roxana_zwicky@roxynomad.com'>roxana_zwicky@roxynomad.com</Link>
 							<p className={indexStyles.contactNumberTitle}>Ruf mich an:</p>
 							<Link className={indexStyles.contactNumber} href='tel:+41772831236'>+41 77 283 1236</Link>
 							<p className={indexStyles.contactFormularTitle}>Hier gehts zum <Link href="/contact" className={indexStyles.contactFormularButton} target="_blank">Kontaktformular</Link></p>
