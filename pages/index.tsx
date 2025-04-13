@@ -44,9 +44,9 @@ const Index = () => {
 							</p>
 							<p className={indexStyles.aboutMeSubtitle}>Tech Stack & Skills</p>
 							<p className={indexStyles.aboutMeText}>
-								💻 Frontend: React, Next.js, Redux, Tailwind CSS<br />
-								⚙️ Backend: Node.js, NestJS, Express, GraphQL, PostgreSQL, Prisma<br />
-								🚀 DevOps & Tools: Git, Docker, Supabase, CI/CD mit GitHub Actions<br />
+								💻 Frontend: Next.js, React, Redux, Tailwind CSS, SCSS, TypeScript, JavaScript<br />
+								⚙️ Backend: Node.js, Python, PostgreSQL, NestJS, Express, GraphQL, Prisma<br />
+								🚀 DevOps & Tools: Git, Supabase, CI/CD mit GitHub Actions, Docker<br />
 								🌎 Zusätzliches: UI/UX mit Figma, REST APIs, MongoDB<br />
 							</p>
 							<p className={indexStyles.aboutMeSubtitle}>Let’s connect!</p>
@@ -59,7 +59,38 @@ const Index = () => {
 					</div>
 				</section>
 
-				<section id="projects"></section>
+				<section id="projects" className={indexStyles.projectsContainer}>
+					<p className={indexStyles.projectsTitle}>Projekte</p>
+					<div className={indexStyles.projectsSubContainer}>
+						<div className={indexStyles.projectContainer}>
+							<Link href='https://galleryshop.vercel.app/'>
+								<Image src='/pictures/onlineShop.png' alt='Project 1' width={3840} height={2160} className={indexStyles.projectImage}/>
+							</Link>
+							<p className={indexStyles.projectDescription}>
+								Technologie Stack<br />
+								Next.js, TypeScript, TailwindCSS, Module CSS (SCSS), Supabase (PostgreSQL), Stripe, Vercel, Chart.js<br />
+								<br />
+								Das Projekt ist ein Online-Shop, der es Nutzern ermöglicht, ihre Kunstwerke zu verkaufen.
+								Es beinhaltet eine Chatfunktion, eine Künstler-Seite, um die Produkte zu verwalten,
+								eine Suchfunktion, einige Filter- und Sortierungsfunktionen und eine Datenbank.<br />
+								Es ist für den Kunden möglich , seine Bestellungen zu verfolgen.<br />
+							</p>
+						</div>
+						<div className={indexStyles.projectContainer}>
+							<Link href='https://eternal-ghosts.vercel.app/news'>
+								<Image src='/pictures/bandPage.png' alt='Project 2' width={3840} height={2160} className={indexStyles.projectImage}/>
+							</Link>
+							<p className={indexStyles.projectDescription}>
+								Technologie Stack<br />
+								Next.js, TypeScript, TailwindCSS, Module CSS, Vercel, nodemailer<br />
+								<br />
+								Das Projekt ist eine klassische Band-Website, die es Nutzern ermöglicht, sich über die Band zu informieren.<br />
+								Es besteht aus mehreren Seiten, einige haben Unterseiten oder Funktionen
+								und es gibt eine Kontaktseite, die es dem Nutzer ermöglicht, der Band eine Nachricht zu senden.<br />
+							</p>
+						</div>
+					</div>
+				</section>
 
 				<footer id="contact" className={indexStyles.footerContainer}>
 					<div className={iconStyles.contactIconsOne}>
