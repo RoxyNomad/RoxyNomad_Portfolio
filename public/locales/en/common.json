@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+	"aboutMe": {
+		"intro": "Hey, I'm Roxana – A Developer with a Big Picture Perspective",
+		"text1": "Code is my language, structure is my style, and efficiency is my philosophy. As a web and software developer, I build high-performance, scalable applications with modern technologies like TypeScript, React, Next.js, NestJS, and PostgreSQL. My focus: clean code, intuitive UX, and sustainable architecture.",
+		"text2": "I love solving complex challenges pragmatically – whether in the frontend, backend, or optimizing workflows. My experience as an entrepreneur and event organizer has taught me to work structured, goal-oriented, and adaptable – qualities that are crucial in software development.",
+		"remote": "Remote-First & Solution-Oriented",
+		"remoteText": "My office? Wherever the best ideas come from. As a digital nomad and vanlifer, I am used to working remotely, flexibly, and independently. Efficient communication, collaborative processes, and thoughtful solutions are second nature to me – whether working solo or in a team.",
+		"techStack": "Tech Stack & Skills",
+		"techStackText1": "💻 Frontend: Next.js, Angular, React, Redux, Tailwind CSS, SCSS, TypeScript, JavaScript",
+		"techStackText2": "⚙️ Backend: Node.js, PostgreSQL, NestJS, Prisma, Python",
+		"techStackText3": "🚀 DevOps & Tools: Git, Supabase, CI/CD with GitHub Actions, Docker",
+		"techStackText4": "🌎 Additional: UI/UX with Figma, REST APIs",
+		"connect": "Let’s connect!",
+		"connectText1": "I'm always looking for new challenges and exciting projects. Let's develop innovative solutions together!",
+		"connectText2": "📩 Shoot me a message – I look forward to hearing from you!"
+	},
+	"projects": {
+    "title": "Projects",
+    "project1": {
+      "name": "Online Shop",
+      "description": "The project is an online shop that allows users to sell their artwork. It includes a chat function, an artist page to manage products, a search function, some filter and sorting features, and a database. Customers can also track their orders.",
+      "techStack1": "Technology Stack",
+			"techStack2": "Next.js, TypeScript, TailwindCSS, Module CSS (SCSS), Supabase (PostgreSQL), Stripe, Vercel, Chart.js"
+    },
+    "project2": {
+      "name": "Band Website",
+      "description": "The project is a classic band website that allows users to learn about the band. It consists of several pages, some with subpages or features, and a contact page that allows users to send a message to the band.",
+      "techStack1": "Technology Stack",
+			"techStack2": "Next.js, TypeScript, TailwindCSS, Module CSS, Vercel, nodemailer"
+    }
+  },
+	"contact": {
+		"title": "My Contact Information",
+		"address": {
+			"name": "Roxana Zwicky",
+			"street": "Hauptstrasse 35",
+			"zip": "4133 Pratteln",
+			"country": "Switzerland"
+		},
+		"emailTitle": "Send me an email:",
+		"email": "roxana_zwicky@roxynomad.com",
+		"phoneTitle": "Call me:",
+		"phone": "+41 77 283 1236",
+		"formText": "Go to the",
+		"formLink": "contact form"
+	},
+	"contactForm": {
+		"namePlaceholder": "Your Name",
+		"emailPlaceholder": "Your Email",
+		"phonePlaceholder": "Your Phone Number",
+		"subjectPlaceholder": "Subject",
+		"messagePlaceholder": "Your Message",
+		"buttonSend": "Send",
+		"buttonSending": "Sending...",
+		"successMessage": "Message sent!",
+		"errorMessage": "Error while sending."
+	}	
+}

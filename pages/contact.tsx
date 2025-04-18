@@ -1,10 +1,23 @@
 import { useState } from "react";
 import Head from "next/head";
-import contactStyles from "@/styles/contact.module.css";
-import emailjs from "emailjs-com"; // Importiere EmailJS
+import contactStyles from "@/styles/contactPage.module.css";
+import emailjs from "emailjs-com";
+import { useTranslation } from "next-i18next";
+import { GetStaticProps } from 'next';
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
-const Contact = () => {
-  // State für Formulardaten
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? "de", ["common"])),
+    },
+  };
+};
+
+const ContactForm = () => {
+  const { t } = useTranslation('common');
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -15,35 +28,34 @@ const Contact = () => {
 
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
-  // Eingabewerte aktualisieren
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Formular senden (mit EmailJS)
   const handleSubmit = async (e: React.FormEvent) => {
-		e.preventDefault();
-		setStatus("sending");
-	
-		try {
-			const response = await emailjs.send(
-				"service_92r8txc", // Service-ID von EmailJS
-				"template_c91k9rl", // Template-ID von EmailJS
-				formData, // Die Formulardaten, die an das Template übergeben werden
-				"WaiL_NoHkEDIqd3FQ" // Deine User-ID von EmailJS
-			);
-	
-			if (response.status === 200) {
-				setStatus("success");
-				setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-			} else {
-				setStatus("error");
-			}
-		} catch (error) {
-			console.error("Fehler beim Senden:", error);
-			setStatus("error");
-		}
-	};
+    e.preventDefault();
+    setStatus("sending");
+
+    try {
+      const response = await emailjs.send(
+        "service_92r8txc",
+        "template_c91k9rl",
+        formData,
+        "WaiL_NoHkEDIqd3FQ"
+      );
+
+      if (response.status === 200) {
+        setStatus("success");
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error("Fehler beim Senden:", error);
+      setStatus("error");
+    }
+  };
+  
 
   return (
     <div>
@@ -51,13 +63,14 @@ const Contact = () => {
         <title>RoxyNomad Contact</title>
       </Head>
       <main>
+        <LanguageSwitcher />
         <form onSubmit={handleSubmit} className={contactStyles.formContainer}>
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Ihr Name"
+            placeholder={t("contactForm.namePlaceholder")}
             className={contactStyles.input}
             required
           />
@@ -66,7 +79,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Ihre Email"
+            placeholder={t("contactForm.emailPlaceholder")}
             className={contactStyles.input}
             required
           />
@@ -75,7 +88,7 @@ const Contact = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            placeholder="Ihre Telefonnummer"
+            placeholder={t("contactForm.phonePlaceholder")}
             className={contactStyles.input}
           />
           <input
@@ -83,7 +96,7 @@ const Contact = () => {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            placeholder="Betreff"
+            placeholder={t("contactForm.subjectPlaceholder")}
             className={contactStyles.input}
             required
           />
@@ -91,7 +104,7 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Ihre Nachricht"
+            placeholder={t("contactForm.messagePlaceholder")}
             className={contactStyles.textarea}
             required
           ></textarea>
@@ -100,15 +113,15 @@ const Contact = () => {
             className={contactStyles.button}
             disabled={status === "sending"}
           >
-            {status === "sending" ? "Senden..." : "Senden"}
+            {status === "sending" ? t("contactForm.buttonSending") : t("contactForm.buttonSend")}
           </button>
 
-          {status === "success" && <p className={contactStyles.success}>Nachricht gesendet!</p>}
-          {status === "error" && <p className={contactStyles.error}>Fehler beim Senden.</p>}
+          {status === "success" && <p className={contactStyles.success}>{t("contactForm.successMessage")}</p>}
+          {status === "error" && <p className={contactStyles.error}>{t("contactForm.errorMessage")}</p>}
         </form>
       </main>
     </div>
   );
 };
 
-export default Contact;
+export default ContactForm;

@@ -1,12 +1,31 @@
-/* styles/languageSwitcher.module.css */
 .switcher {
-  margin-top: 0.5rem;
   display: flex;
-  gap: 1rem;
-  justify-content: center;
+  gap: 1vh;
+  margin-top: 1vh;
+	margin-right: 1vw;
+  justify-content: flex-end;
+}
+
+.button {
+  padding: 0.4vh 0.8vw;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 3vh;
+  transition: all 0.2s ease-in-out;
+	font-size: 2vh;
 }
 
 .active {
-  font-weight: bold;
-  text-decoration: underline;
+  background-color: #1f2937; /* z.B. dunkelgrau */
+  color: #4fd8d6;
+}
+
+.inactive {
+  background-color: #4fd8d6; /* z.B. hellgrau */
+  color: #1f2937;
+}
+
+.button:hover {
+  transform: scale(1.05);
 }

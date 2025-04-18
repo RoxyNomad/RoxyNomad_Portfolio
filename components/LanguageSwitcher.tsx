@@ -1,24 +1,35 @@
-// components/LanguageSwitcher.tsx
-import Link from 'next/link';
+import clsx from 'clsx';
 import { useRouter } from 'next/router';
-import styles from '@/styles/languageSwitcher.module.css'; // Optional für Styling
+import styles from '@/styles/languageSwitcher.module.css';
 
 const LanguageSwitcher = () => {
   const router = useRouter();
-  const { locale, locales, asPath } = router;
+  const { locale, asPath } = router;
+
+  const changeLanguage = (newLocale: string) => {
+    router.push(asPath, asPath, { locale: newLocale });
+  };
 
   return (
     <div className={styles.switcher}>
-      {locales?.map((lng) => (
-        <Link
-          key={lng}
-          href={asPath}
-          locale={lng}
-          className={lng === locale ? styles.active : ''}
-        >
-          {lng.toUpperCase()}
-        </Link>
-      ))}
+      <button
+        onClick={() => changeLanguage('de')}
+        className={clsx(styles.button, {
+          [styles.active]: locale === 'de',
+          [styles.inactive]: locale !== 'de',
+        })}
+      >
+        DE
+      </button>
+      <button
+        onClick={() => changeLanguage('en')}
+        className={clsx(styles.button, {
+          [styles.active]: locale === 'en',
+          [styles.inactive]: locale !== 'en',
+        })}
+      >
+        EN
+      </button>
     </div>
   );
 };

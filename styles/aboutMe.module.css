@@ -1,0 +1,40 @@
+.aboutMeContainer {
+	display: flex;
+	margin: 0 2vw;
+	margin-bottom: 10vh;
+	gap: 2vw;
+}
+
+.portraitContainer {
+	margin-top: 25vh;
+}
+
+.portrait {
+	width: 16.9vw;
+	height: 47vh;
+	border-radius: 3vh;
+	border: 0.2vh solid #4fd8d6;
+}
+
+.aboutMeTextContainer {
+	margin-top: 14vh;
+	border: 0.2vh solid #4fd8d6;
+	border-radius: 3vh;
+	padding: 1vh;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.aboutMeSubtitle {
+	font-size: 3vh;
+	margin: 0;
+}
+
+.aboutMeText {
+	font-size: 2vh;
+}
+
+.aboutMeSubtitle, .aboutMeText {
+	font-family: Orbitron, Verdana, sans-serif;
+	color:#4fd8d6;
+	text-shadow: 1px 1px 4px #4fd8d6;
+}
