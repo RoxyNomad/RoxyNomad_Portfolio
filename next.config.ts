@@ -1,9 +1,9 @@
-import type { NextConfig } from "next";
 import { i18n } from './next-i18next.config';
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   i18n,
-  reactStrictMode: true
+  reactStrictMode: true,
+  swcMinify: true,
 };
 
 export default nextConfig;
