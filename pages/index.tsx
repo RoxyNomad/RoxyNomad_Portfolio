@@ -3,6 +3,8 @@ import indexStyles from '@/styles/index.module.css'
 import iconStyles from '@/styles/icons.module.css'
 import Image from "next/image"
 import Link from "next/link"
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+
 
 const Index = () => {
 
@@ -18,6 +20,7 @@ const Index = () => {
 						<Link href='#projects' className={indexStyles.navbarTitleTwo}>Projects</Link>
 						<Link href='#contact' className={indexStyles.navbarTitleThree}>Contact</Link>
 					</nav>
+					<LanguageSwitcher/>
 				</header>
 				<section id='about-me'>
 					<div className={indexStyles.aboutMeContainer}>
@@ -44,10 +47,10 @@ const Index = () => {
 							</p>
 							<p className={indexStyles.aboutMeSubtitle}>Tech Stack & Skills</p>
 							<p className={indexStyles.aboutMeText}>
-								💻 Frontend: Next.js, React, Redux, Tailwind CSS, SCSS, TypeScript, JavaScript<br />
-								⚙️ Backend: Node.js, Python, PostgreSQL, NestJS, Express, GraphQL, Prisma<br />
+								💻 Frontend: Next.js, Angular, React, Redux, Tailwind CSS, SCSS, TypeScript, JavaScript<br />
+								⚙️ Backend: Node.js, PostgreSQL, NestJS, Prisma, Python<br />
 								🚀 DevOps & Tools: Git, Supabase, CI/CD mit GitHub Actions, Docker<br />
-								🌎 Zusätzliches: UI/UX mit Figma, REST APIs, MongoDB<br />
+								🌎 Zusätzliches: UI/UX mit Figma, REST APIs<br />
 							</p>
 							<p className={indexStyles.aboutMeSubtitle}>Let’s connect!</p>
 							<p className={indexStyles.aboutMeText}>

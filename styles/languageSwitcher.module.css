@@ -1,0 +1,12 @@
+/* styles/languageSwitcher.module.css */
+.switcher {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
