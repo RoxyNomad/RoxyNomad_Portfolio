@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "name": "Online-Shop",
+    "imageUrl": "/pictures/onlineShop.png",
+    "link": "https://galleryshop.vercel.app/",
+    "techStack": ["Technologie-Stack", "Next.js, TypeScript, TailwindCSS, Module CSS (SCSS), Supabase (PostgreSQL), Stripe, Vercel, Chart.js"],
+    "description": "Das Projekt ist ein Online-Shop, der es Nutzern ermöglicht, ihre Kunstwerke zu verkaufen. Es beinhaltet eine Chatfunktion, eine Künstler-Seite, um die Produkte zu verwalten, eine Suchfunktion, einige Filter- und Sortierungsfunktionen und eine Datenbank. Es ist für den Kunden möglich, seine Bestellungen zu verfolgen."
+  },
+  {
+    "id": "2",
+    "name": "Band-Webseite",
+    "imageUrl": "/pictures/bandPage.png",
+    "link": "https://eternal-ghosts.vercel.app/news",
+    "techStack": ["Technologie-Stack", "Next.js, TypeScript, TailwindCSS, Module CSS, Vercel, nodemailer"],
+    "description": "Das Projekt ist eine klassische Band-Website, die es Nutzern ermöglicht, sich über die Band zu informieren. Es besteht aus mehreren Seiten, einige haben Unterseiten oder Funktionen und es gibt eine Kontaktseite, die es dem Nutzer ermöglicht, der Band eine Nachricht zu senden."
+  }
+]

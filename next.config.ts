@@ -1,9 +1,18 @@
-import { i18n } from './next-i18next.config';
+// next.config.ts
+import path from 'path';
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  i18n,
   reactStrictMode: true,
-  swcMinify: true,
+  pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
+  webpack(config) {
+    config.resolve = config.resolve || {};
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, 'src'),
+    };
+    return config;
+  },
 };
 
 export default nextConfig;
