@@ -18,52 +18,35 @@ const AboutMe = () => {
         </div>
         <div className={styles.aboutMeTextContainer}>
           <p className={styles.aboutMeSubtitle}>
-            Hey, ich bin Roxana – Entwicklerin mit Blick fürs Ganze
+            Hey, ich bin Roxana – Ich bringe Ihre Videos und Ideen zum Leben!
           </p>
           <p className={styles.aboutMeText}>
-            Code ist meine Sprache, Struktur mein Stil und Effizienz meine Philosophie. 
-            Als Web- und Softwareentwicklerin baue ich performante, 
-            skalierbare Anwendungen mit modernen Technologien wie TypeScript, React, Next.js, NestJS und PostgreSQL. 
-            Mein Fokus: sauberer Code, intuitive UX und nachhaltige Architektur.
+            Als leidenschaftlicher Video Editor und Cutter habe ich ein feines Gespür für Timing, Rhythmus und Emotionen. 
+            Mit diesen Fähigkeiten verwandle ich Ihr Rohmaterial in fesselnde Geschichten.
           </p>
           <p className={styles.aboutMeText}>
-            Ich liebe es, komplexe Herausforderungen pragmatisch zu lösen – egal ob im Frontend, 
-            Backend oder bei der Optimierung von Workflows. 
-            Meine Erfahrung als Unternehmerin und Veranstaltungsriggerin hat mir beigebracht, strukturiert, 
-            zielgerichtet und anpassungsfähig zu arbeiten – Eigenschaften, die auch in der Softwareentwicklung entscheidend sind.
+            Brauchen Sie ein stimmungsvolles Video Ihrer letzten Reise, 
+            ein oder mherere YouTube Videos oder professionelle Social-Media-Beiträge für Ihr Instagram oder TikTok? 
+            Ich liefere Ihnen präzise geschnittene Inhalte mit Stil und Struktur.
           </p>
           <p className={styles.aboutMeSubtitle}>
-            Remote-First & Lösungsorientiert
+            Was mich auszeichnet:
           </p>
           <p className={styles.aboutMeText}>
-            Mein Büro? Überall dort, wo die besten Ideen entstehen. 
-            Als digitale Nomadin und Vanliferin bin ich es gewohnt, remote, flexibel und eigenverantwortlich zu arbeiten. 
-            Effiziente Kommunikation, kollaborative Prozesse und durchdachte Lösungen sind für mich selbstverständlich – ob allein oder im Team.
+            Gefühl für Storytelling & Dramaturgie
+            Schneller, intuitiver Workflow mit DaVinci Resolve
+            Ausgeprägte Kreativität durch künstlerisches Training
+            Liebe zum Detail und hohe Qualitätsansprüche
           </p>
           <p className={styles.aboutMeSubtitle}>
-            Tech Stack & Skills
+            Bereit für dein nächstes Projekt?
           </p>
           <p className={styles.aboutMeText}>
-            💻 Frontend: Next.js, Angular, React, Redux, Tailwind CSS, SCSS, TypeScript, JavaScript
-          </p>
-					<p className={styles.aboutMeText}>
-            ⚙️ Backend: Node.js, PostgreSQL, NestJS, Prisma, Python
-          </p>
-					<p className={styles.aboutMeText}>
-            🚀 DevOps & Tools: Git, Supabase, CI/CD mit GitHub Actions, Docker
-          </p>
-					<p className={styles.aboutMeText}>
-            🌎 Zusätzliches: UI/UX mit Figma
-          </p>
-          <p className={styles.aboutMeSubtitle}>
-            Lets connect!
+            Sehen Sie sich hier meine bisherigen Arbeiten an:
           </p>
           <p className={styles.aboutMeText}>
-            Ich bin immer auf der Suche nach neuen Herausforderungen und spannenden Projekten. 
-            Lass uns gemeinsam innovative Lösungen entwickeln!
-          </p>
-					<p className={styles.aboutMeText}>
-            📩 Schreib mir – ich freue mich auf den Austausch!
+            Wenn Sie Ihr nächster Videoschnitt von mir möchten,
+            Schreiben Sie mir. Ich freue mich auf die Zusammenarbeit!
           </p>
         </div>
       </div>
