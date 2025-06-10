@@ -45,10 +45,7 @@ const AboutMe = () => {
             Bereit für dein nächstes Projekt?
           </p>
           <p className={styles.aboutMeText}>
-            Sehen Sie sich hier meine bisherigen Arbeiten an: 
-            <button className='projectsLinkButton'>
-              <Link href='#projects' className='projectsLink'>Projekte</Link>
-            </button>
+            Sehen Sie sich hier meine bisherigen Arbeiten an: <Link href='#projects' className='projectsLink'>Projekte</Link>
           </p>
           <p className={styles.aboutMeText}>
             Wenn Sie Ihr nächster Videoschnitt von mir möchten, Schreiben Sie mir. <br />
