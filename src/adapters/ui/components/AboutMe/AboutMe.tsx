@@ -1,6 +1,7 @@
 // src/adapters/ui/components/AboutMe/AboutMe.tsx
 import styles from './AboutMe.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const AboutMe = () => {
 
@@ -44,11 +45,11 @@ const AboutMe = () => {
             Bereit für dein nächstes Projekt?
           </p>
           <p className={styles.aboutMeText}>
-            Sehen Sie sich hier meine bisherigen Arbeiten an:
+            Sehen Sie sich hier meine bisherigen Arbeiten an: <Link href='#projects'>Projekte</Link>
           </p>
           <p className={styles.aboutMeText}>
-            Wenn Sie Ihr nächster Videoschnitt von mir möchten,
-            Schreiben Sie mir. Ich freue mich auf die Zusammenarbeit!
+            Wenn Sie Ihr nächster Videoschnitt von mir möchten, Schreiben Sie mir. <br />
+            Ich freue mich auf die Zusammenarbeit!
           </p>
         </div>
       </div>
