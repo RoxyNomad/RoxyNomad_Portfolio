@@ -7,13 +7,9 @@ import { getProjectsQuery } from "@/application/queries/GetProjectsQuery";
 import { Project } from "@/domain/projects/Project";
 
 const techStackOptions = [
-  "all",
-  "Next.js",
-  "React",
-  "TailwindCSS",
-  "Supabase",
-  "Angular",
-  "NestJS",
+  "Alle",
+  "Horizontal",
+  "Vertikal",
 ];
 
 const Projects: React.FC = () => {
@@ -35,7 +31,7 @@ const Projects: React.FC = () => {
 
   return (
     <div id="projects" className={styles.projectsContainer}>
-      <p className={styles.projectsTitle}>Projekte</p>
+      <p className={styles.projectsTitle}>Videos</p>
 
       {/* Filter & Sortierbereich */}
       <div className={styles.filterContainer}>
