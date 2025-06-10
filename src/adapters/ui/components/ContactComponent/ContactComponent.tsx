@@ -16,12 +16,6 @@ const ContactComponent: React.FC<ContactComponentProps> = ({ contactInfo }) => {
         <Link href={contactInfo.links.linkedin}>
           <Image src='/pictures/linkedin-icon.png' alt='LinkedIn Icon' width={100} height={100} className={iconStyles.linkedInIcon} />
         </Link>
-        <Link href={contactInfo.links.github}>
-          <Image src='/pictures/github-icon.png' alt='GitHub Icon' width={100} height={100} className={iconStyles.githubIcon} />
-        </Link>
-        <Link href={contactInfo.links.codepen}>
-          <Image src='/pictures/codepen-icon.png' alt='CodePen Icon' width={100} height={100} className={iconStyles.codepenIcon} />
-        </Link>
         <Link href={contactInfo.links.whatsapp} target='_blank'>
           <Image src='/pictures/whatsapp-icon.png' alt='WhatsApp Chat' width={100} height={100} className={iconStyles.whatsappIcon} />
         </Link>

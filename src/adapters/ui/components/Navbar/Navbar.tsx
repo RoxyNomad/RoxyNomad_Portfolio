@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
     <div>
       <nav className={styles.navbar}>
         <Link href='#about-me' className={styles.navbarTitleOne}>Über mich</Link>
-        <Link href='#projects' className={styles.navbarTitleTwo}>Projekte</Link>
+        <Link href='#projects' className={styles.navbarTitleTwo}>Videos</Link>
         <Link href='#contact' className={styles.navbarTitleThree}>Kontakt</Link>
       </nav>
     </div>
