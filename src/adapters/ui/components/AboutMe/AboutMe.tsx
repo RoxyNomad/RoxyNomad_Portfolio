@@ -1,7 +1,6 @@
 // src/adapters/ui/components/AboutMe/AboutMe.tsx
 import styles from './AboutMe.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const AboutMe = () => {
 
