@@ -58,17 +58,17 @@ const Projects: React.FC = () => {
         <div className={styles.projectsSubContainer}>
           {projects.map((project) => (
             <div key={project.id} className={styles.projectContainer}>
-              <Link href={project.videoPath} target="_blank" rel="noopener noreferrer">
+              <Link href={project.link} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={project.imageUrl}
-                  alt={project.videoTitle}
+                  alt={project.name}
                   width={3840}
                   height={2160}
                   className={styles.projectImage}
                 />
               </Link>
               <p className={styles.projectDescription}>
-                <strong>{project.videoTitle}</strong><br />
+                <strong>{project.name}</strong><br />
               </p>
             </div>
           ))}

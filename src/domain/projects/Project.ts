@@ -2,9 +2,9 @@
 export class Project {
   constructor(
 		public id: number,
-    public videoTitle: string,
+    public name: string,
     public imageUrl: string,
-    public videoPath: string,
+    public link: string,
     public orientation: string = "all",
   ) {}
 }

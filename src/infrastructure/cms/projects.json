@@ -1,51 +1,51 @@
 [
   {
     "id": "1",
-    "videoTitle": "Coffee Reel",
+    "name": "Coffee Reel",
     "imageUrl": "/pictures/Coffe_Reel.png",
-    "videoPath": "/videos/Coffee Reel.mp4",
+    "link": "/videos/Coffee Reel.mp4",
     "orientation": "Vertikal"
   },
   {
     "id": "2",
-    "videoTitle": "WRC 2024 Schweden",
+    "name": "WRC 2024 Schweden",
     "imageUrl": "/pictures/WRC_2024_Sweden.png",
-    "videoPath": "/videos/WRC 2024 Sweden.mp4",
+    "link": "/videos/WRC 2024 Sweden.mp4",
     "orientation": "Horizontal"
   },
   {
     "id": "3",
-    "videoTitle": "Skifahren",
+    "name": "Skifahren",
     "imageUrl": "/pictures/Skifahren.png",
-    "videoPath": "/videos/Skifahren.mp4",
+    "link": "/videos/Skifahren.mp4",
     "orientation": "Horizontal"
   },
   {
     "id": "4",
-    "videoTitle": "Tutorialvideo",
+    "name": "Tutorialvideo",
     "imageUrl": "/pictures/Tutorialvideo.png",
-    "videoPath": "/videos/Tutorialvideo.mp4",
+    "link": "/videos/Tutorialvideo.mp4",
     "orientation": "Horizontal"
   },
   {
     "id": "5",
-    "videoTitle": "Tutorialvideo",
+    "name": "Tutorialvideo",
     "imageUrl": "/pictures/Tutorialvideo_vertikal.png",
-    "videoPath": "/videos/Tutorialvideo_vertikal.mp4",
+    "link": "/videos/Tutorialvideo_vertikal.mp4",
     "orientation": "Vertikal"
   },
   {
     "id": "6",
-    "videoTitle": "Vorstellungsvideo",
+    "name": "Vorstellungsvideo",
     "imageUrl": "/pictures/Vorstellungsvideo.png",
-    "videoPath": "/videos/Vorstellungsvideo.mp4",
+    "link": "/videos/Vorstellungsvideo.mp4",
     "orientation": "Horizontal"
   },
   {
     "id": "7",
-    "videoTitle": "Vorstellungsvideo",
+    "name": "Vorstellungsvideo",
     "imageUrl": "/pictures/Vorstellungsvideo_vertikal.png",
-    "videoPath": "/videos/Vorstellungsvideo Vertikal.mp4",
+    "link": "/videos/Vorstellungsvideo Vertikal.mp4",
     "orientation": "Vertikal"
   }
 ]

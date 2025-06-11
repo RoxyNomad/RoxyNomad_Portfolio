@@ -13,7 +13,7 @@ export const getProjectsQuery = async (filterOrientation?: string, sortByName?: 
   }
 
   if (sortByName) {
-    projects = projects.sort((a, b) => a.videoTitle.localeCompare(b.videoTitle));
+    projects = projects.sort((a, b) => a.name.localeCompare(b.name));
   }
 
   return projects;
