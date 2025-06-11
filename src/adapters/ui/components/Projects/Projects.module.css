@@ -52,23 +52,19 @@
 	border: 0.2vh solid #4fd8d6;
 	background-color: rgba(0, 0, 0, 0.6);
 	padding: 1vh;
-	width: 35%;
+	width: 40%;
 }
 
 .projectVideo {
-	width: 50%;
-	height: 50%;
+	width: 70%;
+	height: 70%;
 	border-radius: 3vh;
 	border: 0.2vh solid #4fd8d6;
 }
 
-.projectImage:hover {
-	cursor: pointer;
-}
-
 .projectDescription {
 	font-family: Orbitron, Verdana, sans-serif;
-	font-size: 2vh;
+	font-size: 3vh;
 	color: #4fd8d6;
 	text-shadow: 1px 1px 4px #4fd8d6;
 	text-align: center;
