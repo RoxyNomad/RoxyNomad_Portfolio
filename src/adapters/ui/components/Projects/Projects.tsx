@@ -1,6 +1,5 @@
 // src/adapters/components/Projects/Projects.tsx
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import styles from "./Projects.module.css";
 import { getProjectsQuery } from "@/application/queries/GetProjectsQuery";
 import { Project } from "@/domain/projects/Project";
