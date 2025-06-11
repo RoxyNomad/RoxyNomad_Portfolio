@@ -57,16 +57,8 @@ const Projects: React.FC = () => {
         <div className={styles.projectsSubContainer}>
           {projects.map((project) => (
             <div key={project.id} className={styles.projectContainer}>
-              <video controls>
-                <source src={project.link} rel="noopener noreferrer">
-                <Image
-                  src={project.imageUrl}
-                  alt={project.name}
-                  width={3840}
-                  height={2160}
-                  className={styles.projectImage}
-                />
-              </source>
+              <video controls poster={project.imageUrl}>
+                <source src={project.link} type="video/mp4" />
               <p className={styles.projectDescription}>
                 <strong>{project.name}</strong><br />
               </p>
