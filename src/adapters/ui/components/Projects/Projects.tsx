@@ -5,9 +5,9 @@ import { getProjectsQuery } from "@/application/queries/GetProjectsQuery";
 import { Project } from "@/domain/projects/Project";
 
 const orientationOptions = [
-  "Alle",
-  "Horizontal",
-  "Vertikal",
+  { label: "Alle", value: "all" },
+  { label: "Horizontal", value: "horizontal" },
+  { label: "Vertikal", value: "vertical" },
 ];
 
 const Projects: React.FC = () => {
@@ -38,12 +38,13 @@ const Projects: React.FC = () => {
           onChange={(e) => setOrientation(e.target.value)}
           className={styles.select}
         >
-          {orientationOptions.map((orientation) => (
-            <option key={orientation} value={orientation}>
-              {orientation}
+          {orientationOptions.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
             </option>
           ))}
         </select>
+
 
       </div>
 

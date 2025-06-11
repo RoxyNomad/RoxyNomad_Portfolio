@@ -6,11 +6,12 @@ import { ProjectsRepository } from "@/infrastructure/cms/ProjectsRepository";  /
 export const getProjectsQuery = async (filterOrientation?: string, sortByName?: boolean): Promise<Project[]> => {
   let projects = await fetchProjectsFromDatabase();  // Hier holst du die Projekte, z.B. aus einer DB
 
-  if (filterOrientation) {
+  if (filterOrientation && filterOrientation !== "all") {
     projects = projects.filter((project) =>
-      project.orientation.toLowerCase().includes(filterOrientation.toLowerCase())
+      project.orientation.toLowerCase() === filterOrientation.toLowerCase()
     );
   }
+
 
   if (sortByName) {
     projects = projects.sort((a, b) => a.name.localeCompare(b.name));
