@@ -10,9 +10,7 @@ export class ProjectsRepository {
 					parseInt(project.id, 10),
           project.name,
           project.imageUrl,
-          project.link,
-          project.techStack,
-          project.description
+          project.link
         )
     );
   }

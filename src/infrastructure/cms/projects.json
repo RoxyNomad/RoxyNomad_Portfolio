@@ -1,18 +1,51 @@
 [
   {
     "id": "1",
-    "name": "Online-Shop",
-    "imageUrl": "/pictures/onlineShop.png",
-    "link": "https://galleryshop.vercel.app/",
-    "techStack": ["Technologie-Stack", "Next.js, TypeScript, TailwindCSS, Module CSS (SCSS), Supabase (PostgreSQL), Stripe, Vercel, Chart.js"],
-    "description": "Das Projekt ist ein Online-Shop, der es Nutzern ermöglicht, ihre Kunstwerke zu verkaufen. Es beinhaltet eine Chatfunktion, eine Künstler-Seite, um die Produkte zu verwalten, eine Suchfunktion, einige Filter- und Sortierungsfunktionen und eine Datenbank. Es ist für den Kunden möglich, seine Bestellungen zu verfolgen."
+    "videoTitle": "Coffee Reel",
+    "imageUrl": "/pictures/Coffe_Reel.png",
+    "videoPath": "/videos/Coffee Reel.mp4",
+    "orientation": "Vertikal"
   },
   {
     "id": "2",
-    "name": "Band-Webseite",
-    "imageUrl": "/pictures/bandPage.png",
-    "link": "https://eternal-ghosts.vercel.app/news",
-    "techStack": ["Technologie-Stack", "Next.js, TypeScript, TailwindCSS, Module CSS, Vercel, nodemailer"],
-    "description": "Das Projekt ist eine klassische Band-Website, die es Nutzern ermöglicht, sich über die Band zu informieren. Es besteht aus mehreren Seiten, einige haben Unterseiten oder Funktionen und es gibt eine Kontaktseite, die es dem Nutzer ermöglicht, der Band eine Nachricht zu senden."
+    "videoTitle": "WRC 2024 Schweden",
+    "imageUrl": "/pictures/WRC_2024_Sweden.png",
+    "videoPath": "/videos/WRC 2024 Sweden.mp4",
+    "orientation": "Horizontal"
+  },
+  {
+    "id": "3",
+    "videoTitle": "Skifahren",
+    "imageUrl": "/pictures/Skifahren.png",
+    "videoPath": "/videos/Skifahren.mp4",
+    "orientation": "Horizontal"
+  },
+  {
+    "id": "4",
+    "videoTitle": "Tutorialvideo",
+    "imageUrl": "/pictures/Tutorialvideo.png",
+    "videoPath": "/videos/Tutorialvideo.mp4",
+    "orientation": "Horizontal"
+  },
+  {
+    "id": "5",
+    "videoTitle": "Tutorialvideo",
+    "imageUrl": "/pictures/Tutorialvideo_vertikal.png",
+    "videoPath": "/videos/Tutorialvideo_vertikal.mp4",
+    "orientation": "Vertikal"
+  },
+  {
+    "id": "6",
+    "videoTitle": "Vorstellungsvideo",
+    "imageUrl": "/pictures/Vorstellungsvideo.png",
+    "videoPath": "/videos/Vorstellungsvideo.mp4",
+    "orientation": "Horizontal"
+  },
+  {
+    "id": "7",
+    "videoTitle": "Vorstellungsvideo",
+    "imageUrl": "/pictures/Vorstellungsvideo_vertikal.png",
+    "videoPath": "/videos/Vorstellungsvideo Vertikal.mp4",
+    "orientation": "Vertikal"
   }
 ]

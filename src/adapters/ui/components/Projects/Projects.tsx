@@ -6,7 +6,7 @@ import styles from "./Projects.module.css";
 import { getProjectsQuery } from "@/application/queries/GetProjectsQuery";
 import { Project } from "@/domain/projects/Project";
 
-const techStackOptions = [
+const orientationOptions = [
   "Alle",
   "Horizontal",
   "Vertikal",
@@ -14,20 +14,20 @@ const techStackOptions = [
 
 const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
-  const [selectedTech, setSelectedTech] = useState<string>("all");
+  const [orientation, setOrientation] = useState<string>("all");
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchProjects = async () => {
       setLoading(true);
-      const filter = selectedTech === "all" ? undefined : selectedTech;
+      const filter = orientation === "all" ? undefined : orientation;
       const loadedProjects = await getProjectsQuery(filter);
       setProjects(loadedProjects);
       setLoading(false);
     };
 
     fetchProjects();
-  }, [selectedTech]);
+  }, [orientation]);
 
   return (
     <div id="projects" className={styles.projectsContainer}>
@@ -36,13 +36,13 @@ const Projects: React.FC = () => {
       {/* Filter & Sortierbereich */}
       <div className={styles.filterContainer}>
         <select
-          value={selectedTech}
-          onChange={(e) => setSelectedTech(e.target.value)}
+          value={orientation}
+          onChange={(e) => setOrientation(e.target.value)}
           className={styles.select}
         >
-          {techStackOptions.map((tech) => (
-            <option key={tech} value={tech}>
-              {tech}
+          {orientationOptions.map((orientation) => (
+            <option key={orientation} value={orientation}>
+              {orientation}
             </option>
           ))}
         </select>
@@ -58,19 +58,17 @@ const Projects: React.FC = () => {
         <div className={styles.projectsSubContainer}>
           {projects.map((project) => (
             <div key={project.id} className={styles.projectContainer}>
-              <Link href={project.link} target="_blank" rel="noopener noreferrer">
+              <Link href={project.videoPath} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={project.imageUrl}
-                  alt={project.name}
+                  alt={project.videoTitle}
                   width={3840}
                   height={2160}
                   className={styles.projectImage}
                 />
               </Link>
               <p className={styles.projectDescription}>
-                <strong>{project.name}</strong><br />
-                {project.techStack.join(", ")}<br /><br />
-                {project.description}
+                <strong>{project.videoTitle}</strong><br />
               </p>
             </div>
           ))}
