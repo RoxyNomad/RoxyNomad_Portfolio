@@ -3,49 +3,42 @@
     "id": "1",
     "name": "Coffee Reel",
     "imageUrl": "/pictures/Coffe_Reel.png",
-    "link": "/videos/Coffee Reel.mp4",
+    "link": "https://pub-82940be5ed31427faae92e4c590386f2.r2.dev/Coffee%20Reel.mp4",
     "orientation": "Vertikal"
   },
   {
     "id": "2",
     "name": "WRC 2024 Schweden",
     "imageUrl": "/pictures/WRC_2024_Sweden.png",
-    "link": "/videos/WRC 2024 Sweden.mp4",
+    "link": "https://pub-82940be5ed31427faae92e4c590386f2.r2.dev/WRC%202024%20Sweden.mp4",
     "orientation": "Horizontal"
   },
   {
     "id": "3",
     "name": "Skifahren",
     "imageUrl": "/pictures/Skifahren.png",
-    "link": "/videos/Skifahren.mp4",
+    "link": "https://pub-82940be5ed31427faae92e4c590386f2.r2.dev/Skifahren.mp4",
     "orientation": "Horizontal"
   },
   {
     "id": "4",
     "name": "Tutorialvideo",
-    "imageUrl": "/pictures/Tutorialvideo.png",
-    "link": "/videos/Tutorialvideo.mp4",
-    "orientation": "Horizontal"
+    "imageUrl": "/pictures/Tutorialvideo_vertikal.png",
+    "link": "https://pub-82940be5ed31427faae92e4c590386f2.r2.dev/Blogpage%20Vanlife%201%20Teaser.mp4",
+    "orientation": "Vertikal"
   },
   {
     "id": "5",
-    "name": "Tutorialvideo",
-    "imageUrl": "/pictures/Tutorialvideo_vertikal.png",
-    "link": "/videos/Tutorialvideo_vertikal.mp4",
-    "orientation": "Vertikal"
+    "name": "Vorstellungsvideo",
+    "imageUrl": "/pictures/Vorstellungsvideo.png",
+    "link": "https://pub-82940be5ed31427faae92e4c590386f2.r2.dev/Vorstellungsvideo.mp4",
+    "orientation": "Horizontal"
   },
   {
     "id": "6",
     "name": "Vorstellungsvideo",
-    "imageUrl": "/pictures/Vorstellungsvideo.png",
-    "link": "/videos/Vorstellungsvideo.mp4",
-    "orientation": "Horizontal"
-  },
-  {
-    "id": "7",
-    "name": "Vorstellungsvideo",
     "imageUrl": "/pictures/Vorstellungsvideo_vertikal.png",
-    "link": "/videos/Vorstellungsvideo Vertikal.mp4",
+    "link": "https://pub-82940be5ed31427faae92e4c590386f2.r2.dev/Vorstellungsvideo%20Vertikal.mp4",
     "orientation": "Vertikal"
   }
 ]

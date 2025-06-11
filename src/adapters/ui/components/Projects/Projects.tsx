@@ -58,7 +58,8 @@ const Projects: React.FC = () => {
         <div className={styles.projectsSubContainer}>
           {projects.map((project) => (
             <div key={project.id} className={styles.projectContainer}>
-              <Link href={project.link} target="_blank" rel="noopener noreferrer">
+              <video controls>
+                <source src={project.link} rel="noopener noreferrer">
                 <Image
                   src={project.imageUrl}
                   alt={project.name}
@@ -66,10 +67,11 @@ const Projects: React.FC = () => {
                   height={2160}
                   className={styles.projectImage}
                 />
-              </Link>
+              </source>
               <p className={styles.projectDescription}>
                 <strong>{project.name}</strong><br />
               </p>
+              </video>
             </div>
           ))}
         </div>
