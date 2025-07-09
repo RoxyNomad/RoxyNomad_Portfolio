@@ -40,5 +40,19 @@
     "imageUrl": "/pictures/Vorstellungsvideo_vertikal.png",
     "link": "https://pub-82940be5ed31427faae92e4c590386f2.r2.dev/Vorstellungsvideo%20Vertikal.mp4",
     "orientation": "vertical"
+  },
+  {
+    "id": "7",
+    "name": "The River",
+    "imageUrl": "/pictures/The River.png",
+    "link": "https://pub-82940be5ed31427faae92e4c590386f2.r2.dev/The%20River.mp4",
+    "orientation": "vertical"
+  },
+  {
+    "id": "8",
+    "name": "Grilltag",
+    "imageUrl": "/pictures/Grilltag.png",
+    "link": "https://pub-82940be5ed31427faae92e4c590386f2.r2.dev/Grilltag.mp4",
+    "orientation": "vertical"
   }
 ]
