@@ -1,0 +1,55 @@
+.background {
+	position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  background: linear-gradient(to right, rgba(0, 51, 102, 1) 10%, rgba(85, 107, 47, 1));
+}
+
+.backgroundTitle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	z-index: -2;
+}
+
+.backgroundTitleOne, .backgroundTitleTwo {
+	font-size: 16vh;
+}
+
+.backgroundTitleOne {
+	font-family: Pacifico, Verdana, sans-serif;
+	color: #c9b79b;
+}
+
+.backgroundTitleTwo {
+	font-family: Orbitron, Verdana, sans-serif;
+	color: #4fd8d6;
+	margin-top: -16vh;
+}
+
+
+
+@media (max-width: 1024px) and (orientation: portrait) {
+
+}
+
+@media (max-width: 854px) and (orientation: landscape) {
+	
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+	.backgroundTitleOne, .backgroundTitleTwo {
+		font-size: 12vh;
+	}
+
+	.backgroundTitleTwo {
+		margin-top: -12vh;
+	}
+}

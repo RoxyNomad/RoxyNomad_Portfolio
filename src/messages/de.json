@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+	"aboutMe": {
+    "intro": "Hey, ich bin Roxana – Entwicklerin mit Blick fürs Ganze",
+    "text1": "Code ist meine Sprache, Struktur mein Stil und Effizienz meine Philosophie. Als Web- und Softwareentwicklerin baue ich performante, skalierbare Anwendungen mit modernen Technologien wie TypeScript, React, Next.js, NestJS und PostgreSQL. Mein Fokus: sauberer Code, intuitive UX und nachhaltige Architektur.",
+    "text2": "Ich liebe es, komplexe Herausforderungen pragmatisch zu lösen – egal ob im Frontend, Backend oder bei der Optimierung von Workflows. Meine Erfahrung als Unternehmerin und Veranstaltungsriggerin hat mir beigebracht, strukturiert, zielgerichtet und anpassungsfähig zu arbeiten – Eigenschaften, die auch in der Softwareentwicklung entscheidend sind.",
+    "remote": "Remote-First & Lösungsorientiert",
+    "remoteText": "Mein Büro? Überall dort, wo die besten Ideen entstehen. Als digitale Nomadin und Vanliferin bin ich es gewohnt, remote, flexibel und eigenverantwortlich zu arbeiten. Effiziente Kommunikation, kollaborative Prozesse und durchdachte Lösungen sind für mich selbstverständlich – ob allein oder im Team.",
+    "techStack": "Tech Stack & Skills",
+    "techStackText1": "💻 Frontend: Next.js, Angular, React, Redux, Tailwind CSS, SCSS, TypeScript, JavaScript",
+    "techStackText2": "⚙️ Backend: Node.js, PostgreSQL, NestJS, Prisma, Python",
+		"techStackText3": "🚀 DevOps & Tools: Git, Supabase, CI/CD mit GitHub Actions, Docker",
+		"techStackText4": "🌎 Zusätzliches: UI/UX mit Figma, REST APIs",
+		"connect": "Let’s connect!",
+    "connectText1": "Ich bin immer auf der Suche nach neuen Herausforderungen und spannenden Projekten. Lass uns gemeinsam innovative Lösungen entwickeln!",
+		"connectText2": "📩 Schreib mir – ich freue mich auf den Austausch!"
+  },
+	"projects": {
+    "title": "Projekte",
+    "project1": {
+      "name": "Online-Shop",
+      "description": "Das Projekt ist ein Online-Shop, der es Nutzern ermöglicht, ihre Kunstwerke zu verkaufen. Es beinhaltet eine Chatfunktion, eine Künstler-Seite, um die Produkte zu verwalten, eine Suchfunktion, einige Filter- und Sortierungsfunktionen und eine Datenbank. Es ist für den Kunden möglich, seine Bestellungen zu verfolgen.",
+      "techStack1": "Technologie Stack",
+			"techStack2": "Next.js, TypeScript, TailwindCSS, Module CSS (SCSS), Supabase (PostgreSQL), Stripe, Vercel, Chart.js"
+    },
+    "project2": {
+      "name": "Band-Website",
+      "description": "Das Projekt ist eine klassische Band-Website, die es Nutzern ermöglicht, sich über die Band zu informieren. Es besteht aus mehreren Seiten, einige haben Unterseiten oder Funktionen und es gibt eine Kontaktseite, die es dem Nutzer ermöglicht, der Band eine Nachricht zu senden.",
+      "techStack1": "Technologie Stack",
+			"techStack2": "Next.js, TypeScript, TailwindCSS, Module CSS, Vercel, nodemailer"
+    }
+  },
+	"contact": {
+    "title": "Meine Kontaktdaten",
+    "address": {
+      "name": "Roxana Zwicky",
+      "street": "Hauptstrasse 35",
+      "zip": "4133 Pratteln",
+      "country": "Schweiz"
+    },
+    "emailTitle": "Schreib mir eine Mail:",
+    "email": "roxana_zwicky@roxynomad.com",
+    "phoneTitle": "Ruf mich an:",
+    "phone": "+41 77 283 1236",
+    "formText": "Hier gehts zum",
+    "formLink": "Kontaktformular"
+  },
+	"contactForm": {
+		"namePlaceholder": "Ihr Name",
+		"emailPlaceholder": "Ihre Email",
+		"phonePlaceholder": "Ihre Telefonnummer",
+		"subjectPlaceholder": "Betreff",
+		"messagePlaceholder": "Ihre Nachricht",
+		"buttonSend": "Senden",
+		"buttonSending": "Senden...",
+		"successMessage": "Nachricht gesendet!",
+		"errorMessage": "Fehler beim Senden."
+	}	
+}
+
