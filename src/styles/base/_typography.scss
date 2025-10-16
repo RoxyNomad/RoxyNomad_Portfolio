@@ -1,0 +1,71 @@
+@use './variables' as vars;
+
+// Fonts
+$font-heading: 'Orbitron', sans-serif;
+$font-body: 'Inter', sans-serif;
+$font-accent: 'Pacifico', cursive;
+
+// Font Weights
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 700;
+
+// Body
+body {
+  font-family: $font-body;
+  font-size: vars.$font-size-base;
+  line-height: 1.6;
+	background-color: vars.$background-color;
+  color: vars.$text-color;
+  margin: 0;
+  padding: 0;
+}
+
+// Headings
+h1, .h1 { 
+	font-family: $font-heading; 
+	font-weight: $fw-bold; 
+	font-size: vars.$font-size-h1; 
+	line-height: 1.2; 
+	margin: 0 0 1rem 0; 
+}
+
+h2, .h2 { 
+	font-family: $font-heading; 
+	font-weight: $fw-bold; 
+	font-size: vars.$font-size-h2; 
+	line-height: 1.3; 
+	margin: 0 0 0.75rem 0; 
+}
+
+h3, .h3 { 
+	font-family: $font-heading; 
+	font-weight: $fw-bold; 
+	font-size: vars.$font-size-h3; 
+	line-height: 1.3; 
+	margin: 0 0 0.5rem 0; 
+}
+
+// Paragraph
+p { 
+	font-family: $font-body; 
+	font-weight: $fw-regular; 
+	font-size: 1rem; 
+	line-height: 1.6; 
+	margin: 0 0 1rem 0; 
+}
+
+// Small Text
+small { 
+	font-family: $font-body; 
+	font-size: 0.875rem; 
+	line-height: 1.4; 
+	color: vars.$text-light; 
+}
+
+// Accent Text
+.accent { 
+	font-family: $font-accent; 
+	font-size: 1.5rem; 
+	color: vars.$headings-color-1; 
+}

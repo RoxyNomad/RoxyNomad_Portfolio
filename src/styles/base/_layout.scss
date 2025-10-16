@@ -1,0 +1,20 @@
+// Container für Seiteninhalt
+.container {
+  width: 90%;
+  max-width: 1200px; // kann aus $max-width-Variable kommen
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+// Section Spacing
+.section {
+  padding: 4rem 0;
+
+  &--small { 
+		padding: 2rem 0; 
+	}
+  
+	&--large { 
+		padding: 6rem 0; 
+	}
+}

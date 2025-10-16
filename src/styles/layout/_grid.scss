@@ -1,0 +1,35 @@
+@use '../base/variables' as vars;
+
+// Grid System
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col {
+  flex: 1;
+  padding: 0 1rem;
+
+  &-half { 
+		flex: 0 0 50%; 
+		max-width: 50%; 
+	}
+  
+	&-third { 
+		flex: 0 0 33.333%; 
+		max-width: 33.333%; 
+	}
+
+  &-quarter { 
+		flex: 0 0 25%; 
+		max-width: 25%; 
+	}
+
+  @media (max-width: vars.$bp-tablet) {
+    &-half, &-third, &-quarter { 
+			flex: 0 0 100%; 
+			max-width: 100%; 
+		}
+  }
+}

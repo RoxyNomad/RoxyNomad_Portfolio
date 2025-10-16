@@ -1,0 +1,18 @@
+// Flex Center
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Responsive Heading
+@mixin responsiveHeading($min, $max) {
+  font-size: clamp($min, 2vw + 1rem, $max);
+}
+
+// Container
+@mixin container($max-width: 1200px) {
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
