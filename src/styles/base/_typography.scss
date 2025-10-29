@@ -22,7 +22,7 @@ body {
 }
 
 // Headings
-h1, .h1 { 
+.h1 { 
 	font-family: $font-heading; 
 	font-weight: $fw-bold; 
 	font-size: vars.$font-size-h1; 
@@ -30,7 +30,7 @@ h1, .h1 {
 	margin: 0 0 1rem 0; 
 }
 
-h2, .h2 { 
+.h2 { 
 	font-family: $font-heading; 
 	font-weight: $fw-bold; 
 	font-size: vars.$font-size-h2; 
@@ -38,7 +38,7 @@ h2, .h2 {
 	margin: 0 0 0.75rem 0; 
 }
 
-h3, .h3 { 
+.h3 { 
 	font-family: $font-heading; 
 	font-weight: $fw-bold; 
 	font-size: vars.$font-size-h3; 
@@ -47,7 +47,7 @@ h3, .h3 {
 }
 
 // Paragraph
-p { 
+.paragraph { 
 	font-family: $font-body; 
 	font-weight: $fw-regular; 
 	font-size: 1rem; 
@@ -56,7 +56,7 @@ p {
 }
 
 // Small Text
-small { 
+.small { 
 	font-family: $font-body; 
 	font-size: 0.875rem; 
 	line-height: 1.4; 

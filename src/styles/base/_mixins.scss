@@ -5,6 +5,20 @@
   align-items: center;
 }
 
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin gridHeader {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 100px;
+  padding: 1.5rem 3rem;
+}
+
 // Responsive Heading
 @mixin responsiveHeading($min, $max) {
   font-size: clamp($min, 2vw + 1rem, $max);

@@ -1,5 +1,68 @@
-// Header Base
-footer {
+@use '../base/mixins' as mixins;
+@use '../base/variables' as vars;
+@use '../base/typography' as typography;
+
+header {
+  position: fixed; /* bleibt beim Scrollen sichtbar */
+  top: 0;
+  left: 0;
   width: 100%;
-  display: block;
+  z-index: 999;
+
+  .container {
+    width: 80%; /* Header ist auf 80% der Gesamtbreite begrenzt */
+    margin: 0 auto; /* zentriert den Header horizontal */
+    padding: 1rem 0;
+
+    .brand__nav {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr; /* Logo | Nav | Socials */
+      align-items: center; /* alles vertikal in einer Linie */
+      width: 100%;
+      column-gap: 8rem;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      background: linear-gradient(
+        to right,
+        vars.$accent-color-1,
+        vars.$accent-color-2,
+      );
+
+      .header__logo {
+        display: flex;
+        align-items: center;
+        justify-self: start; /* ganz links */
+        border: 0.1rem solid vars.$border-color-blk;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center; /* Navigation mittig */
+        align-items: center;
+      }
+
+      .socials {
+        display: flex;
+        justify-self: end; /* ganz rechts */
+        align-items: center;
+
+        .social__icons {
+          display: flex;
+          gap: 7rem;
+
+          a {
+            transition: transform 0.2s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding-top: 100px; /* verhindert, dass der Inhalt unter dem Header verschwindet */
 }

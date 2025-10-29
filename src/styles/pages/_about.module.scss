@@ -1,0 +1,35 @@
+@use '../base/variables' as vars;
+
+.about__page {
+  padding: 6rem 10%;
+  line-height: 1.8;
+
+  .intro__section {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .about__cta {
+      margin-top: 4rem;
+
+      .cta {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.8rem 2rem;
+        border-radius: 0.5rem;
+        background: vars.$accent-color-2;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+          background: lighten(vars.$accent-color-2, 8%);
+        }
+      }
+    }
+  }
+}

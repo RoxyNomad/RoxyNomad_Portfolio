@@ -1,0 +1,37 @@
+@use '../base/typography' as typography;
+@use '../base/variables' as vars;
+@use '../base/mixins' as mixins;
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .link__container {
+    display: flex;
+    gap: 2rem;
+
+    .nav__links {
+      display: flex;
+      gap: 7rem;
+      list-style: none;
+
+      .nav__link {
+        font-family: typography.$font-heading;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: vars.$text-color;
+        font-weight: typography.$fw-bold;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: vars.$text-light;
+        }
+
+        &.active {
+          color: vars.$headings-color-1;
+        }
+      }
+    }
+  }
+}
