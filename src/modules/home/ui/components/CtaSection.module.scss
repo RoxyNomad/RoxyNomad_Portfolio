@@ -1,0 +1,73 @@
+@use "@/shared/styles" as theme;
+
+.ctaSection {
+  padding: 6rem 0;
+
+  .card {
+    position: relative;
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 51, 102, 0.4) 0%,
+      rgba(85, 107, 47, 0.25) 100%
+    );
+    border: 1px solid theme.$border-color;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
+      margin: 0 auto;
+
+      .subtitle {
+        color: theme.$headings-color-2;
+        font-family: theme.$font-heading;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 0.75rem;
+      }
+
+      .title {
+        font-family: theme.$font-heading;
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: theme.$text-color;
+        line-height: 1.2;
+        margin-bottom: 1.25rem;
+      }
+
+      .description {
+        font-family: theme.$font-body;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 2.5rem;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 2.5rem;
+        border-radius: 2rem;
+        background: theme.$headings-color-1;
+        color: theme.$background-color;
+        font-family: theme.$font-heading;
+        font-weight: theme.$fw-bold;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover {
+          transform: translateY(-3px);
+          background-color: theme.$headings-color-2;
+          box-shadow: 0 10px 25px rgba(139, 211, 199, 0.3);
+        }
+      }
+    }
+  }
+}

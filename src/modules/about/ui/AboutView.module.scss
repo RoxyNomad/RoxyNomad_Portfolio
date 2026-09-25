@@ -1,0 +1,37 @@
+// src/modules/about/ui/about.module.scss
+@use "@/shared/styles" as theme;
+
+.about__page {
+  padding: 6rem 10%;
+  line-height: 1.8;
+
+  .intro__section {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .about__cta {
+      margin-top: 4rem;
+
+      .cta {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.8rem 2rem;
+        border-radius: 0.5rem;
+        background: theme.$accent-color-2;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+          background: color-mix(in srgb, theme.$accent-color-2 90%, #fff);
+        }
+      }
+    }
+  }
+}

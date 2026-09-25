@@ -1,0 +1,32 @@
+// src/shared/styles/_mixins.scss
+@use "./variables" as vars;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin gridHeader {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 100px;
+  padding: 1.5rem 3rem;
+}
+
+@mixin responsiveHeading($min, $max) {
+  font-size: clamp($min, 2vw + 1rem, $max);
+}
+
+@mixin container($max-width: 1200px) {
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+}

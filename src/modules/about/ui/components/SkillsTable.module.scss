@@ -1,0 +1,30 @@
+// src/modules/about/ui/components/SkillsTable.module.scss
+@use "@/shared/styles" as theme;
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  font-size: 1rem;
+
+  th, td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+    padding: 1rem;
+  }
+
+  th {
+    color: theme.$accent-color-1;
+    font-weight: 600;
+    border-bottom: 2px solid theme.$accent-color-2;
+  }
+
+  tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: 0.2s ease;
+  }
+
+  td {
+    color: theme.$text-color;
+  }
+}

@@ -1,0 +1,19 @@
+// src/shared/styles/_layout.scss
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 4rem 0;
+
+  &--small { 
+    padding: 2rem 0; 
+  }
+  
+  &--large { 
+    padding: 6rem 0; 
+  }
+}

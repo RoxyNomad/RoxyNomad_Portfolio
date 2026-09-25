@@ -1,0 +1,124 @@
+@use "@/shared/styles" as theme;
+
+.hero {
+  min-height: calc(85vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1.2rem;
+    border-radius: 2rem;
+    background: rgba(85, 107, 47, 0.2); // $accent-color-2 mit Transparenz
+    border: 1px solid theme.$border-color;
+    color: theme.$headings-color-2;
+    font-size: 0.875rem;
+    font-weight: theme.$fw-bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: theme.$headings-color-2;
+      box-shadow: 0 0 8px theme.$headings-color-2;
+    }
+  }
+
+  .title {
+    font-family: theme.$font-heading;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: theme.$fw-bold;
+    line-height: 1.15;
+    color: theme.$text-color;
+    margin-bottom: 1.5rem;
+
+    .highlight {
+      background: linear-gradient(
+        135deg,
+        theme.$headings-color-1,
+        theme.$headings-color-2
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .subtitle {
+    font-family: theme.$font-body;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 750px;
+    margin-bottom: 2.5rem;
+  }
+
+  .ctaGroup {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .primaryCta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.9rem 2.2rem;
+      border-radius: 2rem;
+      background: linear-gradient(
+        to right,
+        theme.$accent-color-1,
+        theme.$accent-color-2
+      );
+      color: theme.$text-color;
+      font-family: theme.$font-heading;
+      font-weight: theme.$fw-bold;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 20px rgba(0, 51, 102, 0.4);
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 25px rgba(85, 107, 47, 0.6);
+      }
+    }
+
+    .secondaryCta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.9rem 2.2rem;
+      border-radius: 2rem;
+      border: 1px solid theme.$border-color;
+      color: theme.$text-color;
+      font-family: theme.$font-heading;
+      font-weight: theme.$fw-bold;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-color: theme.$headings-color-1;
+      }
+    }
+  }
+}

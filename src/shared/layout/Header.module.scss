@@ -1,0 +1,64 @@
+// src/shared/layout/Header.module.scss
+@use "@/shared/styles" as theme;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+
+    .brand__nav {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      width: 100%;
+      column-gap: 5rem;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      background: linear-gradient(
+        to right,
+        theme.$accent-color-1,
+        theme.$accent-color-2
+      );
+
+      .header__logo {
+        display: flex;
+        align-items: center;
+        justify-self: start;
+        border: 0.1rem solid theme.$border-color-blk;
+        border-radius: 50%;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .socials {
+        display: flex;
+        justify-self: end;
+        align-items: center;
+
+        .social__icons {
+          display: flex;
+          gap: 7rem;
+
+          a {
+            transition: transform 0.2s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

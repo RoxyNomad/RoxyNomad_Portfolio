@@ -1,0 +1,11 @@
+// src/app/globals.scss
+@use "@/shared/styles";
+
+/* Globale Resets & Schriftarten-Konfiguration */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 100px; /* Verhindert Überlappung mit dem fixierten Header */
+}
