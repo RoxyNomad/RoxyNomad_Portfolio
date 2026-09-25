@@ -1,9 +1,10 @@
 .switcher {
+  position: fixed;
+  top: 1vh;
+  right: 1vw;
   display: flex;
   gap: 1vh;
-  margin-top: 1vh;
-	margin-right: 1vw;
-  justify-content: flex-end;
+  z-index: 10;
 }
 
 .button {
@@ -13,16 +14,18 @@
   font-weight: bold;
   border-radius: 3vh;
   transition: all 0.2s ease-in-out;
-	font-size: 2vh;
+  font-size: 2vh;
+  font-family: Orbitron, Verdana, sans-serif;
 }
 
 .active {
-  background-color: #1f2937; /* z.B. dunkelgrau */
+  background-color: #1f2937;
   color: #4fd8d6;
+  text-shadow: 1px 1px 4px #4fd8d6;
 }
 
 .inactive {
-  background-color: #4fd8d6; /* z.B. hellgrau */
+  background-color: #4fd8d6;
   color: #1f2937;
 }
 

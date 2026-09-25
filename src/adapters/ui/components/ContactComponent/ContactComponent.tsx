@@ -4,12 +4,15 @@ import Link from "next/link";
 import styles from './ContactComponent.module.css';
 import iconStyles from './ContactComponentIcons.module.css';
 import { ContactInfo } from "@/domain/contact/ContactComponent";
+import { useTranslations } from 'next-intl';
 
 interface ContactComponentProps {
   contactInfo: ContactInfo;
 }
 
 const ContactComponent: React.FC<ContactComponentProps> = ({ contactInfo }) => {
+  const t = useTranslations('contact');
+
   return (
     <div id="contact" className={styles.footerContainer}>
       <div className={styles.contactIconsOne}>
@@ -23,18 +26,18 @@ const ContactComponent: React.FC<ContactComponentProps> = ({ contactInfo }) => {
 
       <div className={styles.contactDataContainer}>
         <div className={styles.contactDataSubContainer}>
-          <p className={styles.contactTitle}>Meine Kontaktdaten</p>
+          <p className={styles.contactTitle}>{t('title')}</p>
           <p className={styles.contactData}>
             {contactInfo.name}<br />
             {contactInfo.address}<br />
             {contactInfo.country}<br />
           </p>
-          <p className={styles.contactMailTitle}>Schreib mir eine Mail:</p>
+          <p className={styles.contactMailTitle}>{t('emailTitle')}</p>
           <Link className={styles.contactMail} href={`mailto:${contactInfo.email}`}>{contactInfo.email}</Link>
-          <p className={styles.contactNumberTitle}>Ruf mich an:</p>
+          <p className={styles.contactNumberTitle}>{t('phoneTitle')}</p>
           <Link className={styles.contactNumber} href={`tel:${contactInfo.phone}`}>{contactInfo.phone}</Link>
           <p className={styles.contactFormularTitle}>
-            Hier gehts zum: <Link href="/contact" className={styles.contactFormularButton} target="_blank">Kontaktformular</Link>
+            {t('formText')} <Link href="/contact" className={styles.contactFormularButton} target="_blank">{t('formLink')}</Link>
           </p>
         </div>
       </div>

@@ -3,9 +3,11 @@ import { useState } from "react";
 import { ContactFormData } from "../../../../domain/contact/ContactForm";
 import { sendContactForm } from "../../../../application/commands/sendContactForm";
 import styles from "./ContactForm.module.css";
-import { ValidationError } from "../../../../domain/errors/ContactFormErrors"; 
+import { ValidationError } from "../../../../domain/errors/ContactFormErrors";
+import { useTranslations } from 'next-intl';
 
 const ContactForm = () => {
+  const t = useTranslations('contactForm');
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
@@ -29,13 +31,11 @@ const ContactForm = () => {
       setStatus("success");
     } catch (err) {
       if (err instanceof ValidationError) {
-        // Zeige validierungsfehler im UI
-        console.log("Validierungsfehler:", err.details);
+        console.log("Validation errors:", err.details);
       } else {
         setStatus("error");
       }
     }
-    
   };
 
   return (
@@ -45,7 +45,7 @@ const ContactForm = () => {
         name="name"
         value={formData.name}
         onChange={handleChange}
-        placeholder="Ihr Name"
+        placeholder={t('namePlaceholder')}
         className={styles.input}
         required
       />
@@ -55,7 +55,7 @@ const ContactForm = () => {
         name="email"
         value={formData.email}
         onChange={handleChange}
-        placeholder="Ihre E-Mail"
+        placeholder={t('emailPlaceholder')}
         className={styles.input}
         required
       />
@@ -65,7 +65,7 @@ const ContactForm = () => {
         name="subject"
         value={formData.subject}
         onChange={handleChange}
-        placeholder="Betreff"
+        placeholder={t('subjectPlaceholder')}
         pattern="^[a-zA-Z0-9\s\-()]*$"
         className={styles.input}
         required
@@ -75,7 +75,7 @@ const ContactForm = () => {
         name="message"
         value={formData.message}
         onChange={handleChange}
-        placeholder="Nachricht"
+        placeholder={t('messagePlaceholder')}
         className={styles.textarea}
         required
       />
@@ -85,11 +85,11 @@ const ContactForm = () => {
         className={styles.button}
         disabled={status === "sending"}
       >
-        {status === "sending" ? ("Senden...") : ("Senden")} {/* Dynamische Texte für Buttons */}
+        {status === "sending" ? t('buttonSending') : t('buttonSend')}
       </button>
 
-      {status === "success" && <p className={styles.success}>Nachricht gesendet!</p>}
-      {status === "error" && <p className={styles.error}>Fehler beim Senden.</p>}
+      {status === "success" && <p className={styles.success}>{t('successMessage')}</p>}
+      {status === "error" && <p className={styles.error}>{t('errorMessage')}</p>}
     </form>
   );
 };

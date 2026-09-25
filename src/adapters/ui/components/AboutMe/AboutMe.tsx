@@ -1,8 +1,10 @@
 // src/adapters/ui/components/AboutMe/AboutMe.tsx
 import styles from './AboutMe.module.css';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const AboutMe = () => {
+  const t = useTranslations('aboutMe');
 
   return (
     <div id="about-me">
@@ -18,34 +20,33 @@ const AboutMe = () => {
         </div>
         <div className={styles.aboutMeTextContainer}>
           <p className={styles.aboutMeSubtitle}>
-            Hey, ich bin Roxana – Ich bringe Ihre Videos und Ideen zum Leben!
+            {t('intro')}
           </p>
           <p className={styles.aboutMeText}>
-            Als leidenschaftlicher Video Editor und Cutter habe ich ein feines Gespür für Timing, Rhythmus und Emotionen. <br />
-            Mit diesen Fähigkeiten verwandle ich Ihr Rohmaterial in fesselnde Geschichten.
+            {t('text1')} <br />
+            {t('text2')}
           </p>
           <p className={styles.aboutMeText}>
-            Brauchen Sie ein stimmungsvolles Video Ihrer letzten Reise, 
-            ein oder mherere YouTube Videos oder professionelle Social-Media-Beiträge für Ihr Instagram oder TikTok? <br />
-            Ich liefere Ihnen präzise geschnittene Inhalte mit Stil und Struktur.
+            {t('text3')} <br />
+            {t('text4')}
           </p>
           <p className={styles.aboutMeSubtitle}>
-            Was mich auszeichnet:
+            {t('skillsTitle')}
           </p>
           <p className={styles.aboutMeText}>
-            Gefühl für Storytelling & Dramaturgie <br />
-            Präzision und Effizienz im Videoschnitt <br />
-            Kreative Ideen für visuelle Effekte und Übergänge <br />
-            Schneller, intuitiver Workflow mit DaVinci Resolve <br />
-            Ausgeprägte Kreativität durch künstlerisches Training <br />
-            Liebe zum Detail und hohe Qualitätsansprüche <br />
+            {t('skill1')} <br />
+            {t('skill2')} <br />
+            {t('skill3')} <br />
+            {t('skill4')} <br />
+            {t('skill5')} <br />
+            {t('skill6')} <br />
           </p>
           <p className={styles.aboutMeSubtitle}>
-            Bereit für dein nächstes Projekt?
+            {t('ctaTitle')}
           </p>
           <p className={styles.aboutMeText}>
-            Wenn Sie Ihr nächster Videoschnitt von mir möchten, Schreiben Sie mir. <br />
-            Ich freue mich auf die Zusammenarbeit!
+            {t('ctaText')} <br />
+            {t('ctaText2')}
           </p>
         </div>
       </div>

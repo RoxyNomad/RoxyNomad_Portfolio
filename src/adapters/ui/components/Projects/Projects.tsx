@@ -3,17 +3,19 @@ import { useEffect, useState } from "react";
 import styles from "./Projects.module.css";
 import { getProjectsQuery } from "@/application/queries/GetProjectsQuery";
 import { Project } from "@/domain/projects/Project";
-
-const orientationOptions = [
-  { label: "Alle", value: "all" },
-  { label: "Horizontal", value: "horizontal" },
-  { label: "Vertikal", value: "vertical" },
-];
+import { useTranslations } from 'next-intl';
 
 const Projects: React.FC = () => {
+  const t = useTranslations('projects');
   const [projects, setProjects] = useState<Project[]>([]);
   const [orientation, setOrientation] = useState<string>("all");
   const [loading, setLoading] = useState<boolean>(false);
+
+  const orientationOptions = [
+    { label: t('filterAll'), value: "all" },
+    { label: t('filterHorizontal'), value: "horizontal" },
+    { label: t('filterVertical'), value: "vertical" },
+  ];
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -29,7 +31,7 @@ const Projects: React.FC = () => {
 
   return (
     <div id="projects" className={styles.projectsContainer}>
-      <p className={styles.projectsTitle}>Videos</p>
+      <p className={styles.projectsTitle}>{t('title')}</p>
 
       {/* Filter & Sortierbereich */}
       <div className={styles.filterContainer}>
@@ -44,8 +46,6 @@ const Projects: React.FC = () => {
             </option>
           ))}
         </select>
-
-
       </div>
 
       {/* Loading Animation */}

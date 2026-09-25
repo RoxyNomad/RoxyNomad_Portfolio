@@ -2,6 +2,7 @@
 import { ReactNode } from 'react';
 import localFont from 'next/font/local';
 import globalStyles from '../../../theme/global.module.css';
+import LanguageSwitcher from '@/adapters/ui/components/LanguageSwitcher/LanguageSwitcher';
 
 const orbitron = localFont({
   src: '../../../../public/fonts/Orbitron.ttf',
@@ -34,6 +35,9 @@ export default function Layout({ children }: LayoutProps) {
         <h1 className={globalStyles.backgroundTitleOne}>Roxy</h1>
         <h1 className={globalStyles.backgroundTitleTwo}>Nomad</h1>
       </div>
+
+      {/* Language Switcher */}
+      <LanguageSwitcher />
 
       {/* Seiteninhalt */}
       <main>{children}</main>
