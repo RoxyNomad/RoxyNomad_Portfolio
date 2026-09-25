@@ -16,11 +16,15 @@ const SkillsTable = () => {
         </tr>
         <tr>
           <td>⚙️ Backend</td>
-          <td>Express, NestJS, PostgreSQL</td>
+          <td>Express, NestJS, Python</td>
         </tr>
         <tr>
-          <td>☁️ Database</td>
-          <td>PostgreSQL, MongoDB Atlas, Supabase</td>
+          <td>☁️ Database & ORM</td>
+          <td>PostgreSQL, NeonDB, Supabase, MongoDB Atlas, Drizzle ORM</td>
+        </tr>
+        <tr>
+          <td>🏛️ Architecture</td>
+          <td>CQRS, DDD, Clean Code</td>
         </tr>
         <tr>
           <td>🎨 Design</td>

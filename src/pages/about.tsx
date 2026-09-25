@@ -14,8 +14,9 @@ const About = () => {
 				</section>
 				
 				<section className={styles.about__mission}>
-					<p>Mein Fokus liegt auf Frontend-Entwicklung, kombiniert mit durchdachtem Design, modernen Webtechnologien und effizienten Workflows.</p>
-					<p>Ich begleite Projekte von der Idee bis zum fertigen Deployment. Egal ob WordPress, Webflow, React-Apps oder Headless-Lösungen mit Supabase/Neon/PostgreSQL.</p>
+					<p>Mein Fokus liegt auf Frontend-Entwicklung mit TypeScript, kombiniert mit durchdachtem Design, modernen Webtechnologien und effizienten Workflows. Dabei achte ich auf sauberen, wartbaren Code nach Clean-Code-Prinzipien sowie durchdachte Architektur mit Ansätzen wie DDD und CQRS.</p>
+					<p>Ich begleite Projekte von der Idee bis zum fertigen Deployment. Egal ob WordPress, Webflow, React-Apps oder Headless-Lösungen mit NeonDB, Drizzle ORM und Supabase.</p>
+					<p>Für Backend-Logik und Tools greife ich zunehmend auch auf Python zurück – etwa bei meinem eigenen Passwort-Manager, dessen UI ebenfalls in Python umgesetzt ist. Mit PHP bin ich vertraut, setze es in eigenen Projekten aber bewusst nicht ein.</p>
 				</section>
 
 				<section className={styles.about__skills}>
