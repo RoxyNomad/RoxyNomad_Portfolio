@@ -14,7 +14,8 @@ export async function sendContactFormAction(formData: FormData) {
     });
 
     return { success: true, error: null };
-  } catch (err: any) {
-    return { success: false, error: err.message || "Fehler beim Senden der Nachricht." };
+  } catch (err: unknown) {
+    const errorMessage = err instanceof Error ? err.message : "Fehler beim Senden der Nachricht.";
+    return { success: false, error: errorMessage };
   }
 }

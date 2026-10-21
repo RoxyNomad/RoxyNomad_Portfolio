@@ -42,9 +42,10 @@ export function useProjectUpload() {
       await createProjectAction(payload, imageKey);
 
       return { success: true };
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err);
-      setError(err.message || "Fehler beim Erstellen des Projekts.");
+      const errorMessage = err instanceof Error ? err.message : "Fehler beim Erstellen des Projekts.";
+      setError(errorMessage);
       return { success: false };
     } finally {
       setLoading(false);
