@@ -1,0 +1,116 @@
+@use "@/shared/styles" as theme;
+
+.contactForm {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 1.25rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+  h2 {
+    font-family: theme.$font-heading;
+    font-size: 1.75rem;
+    color: theme.$text-color;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 1rem;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    label {
+      font-family: theme.$font-heading;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    input, textarea {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 0.75rem;
+      padding: 0.85rem 1.15rem;
+      color: theme.$text-color;
+      font-family: theme.$font-body;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.35);
+      }
+
+      &:focus {
+        border-color: theme.$headings-color-2;
+        box-shadow: 0 0 0 3px rgba(theme.$headings-color-2, 0.15);
+      }
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+  }
+
+  .successAlert, .errorAlert {
+    padding: 0.85rem 1.15rem;
+    border-radius: 0.75rem;
+    font-family: theme.$font-body;
+    font-size: 0.9rem;
+  }
+
+  .successAlert {
+    background: rgba(46, 213, 115, 0.1);
+    border: 1px solid rgba(46, 213, 115, 0.3);
+    color: #2ed573;
+  }
+
+  .errorAlert {
+    background: rgba(255, 77, 77, 0.1);
+    border: 1px solid rgba(255, 77, 77, 0.3);
+    color: #ff6b6b;
+  }
+
+  button[type="submit"] {
+    margin-top: 0.5rem;
+    background: theme.$headings-color-1;
+    color: theme.$background-color;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-family: theme.$font-heading;
+    font-size: 1rem;
+    font-weight: theme.$fw-bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+
+    &:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(theme.$headings-color-1, 0.3);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}

@@ -11,7 +11,7 @@ interface PortfolioViewProps {
 }
 
 export function PortfolioView({ initialProjects }: PortfolioViewProps) {
-  const [activeCategory, setActiveCategory] = useState<FilterCategory>("all");
+  const [activeCategory, setActiveCategory] = useState<FilterCategory>("web");
 
   const filteredProjects = initialProjects.filter((project) => {
     if (activeCategory === "all") return true;
@@ -33,12 +33,6 @@ export function PortfolioView({ initialProjects }: PortfolioViewProps) {
         </header>
 
         <div className={styles.filterContainer}>
-          <button
-            className={`${styles.filterBtn} ${activeCategory === "all" ? styles.active : ""}`}
-            onClick={() => setActiveCategory("all")}
-          >
-            Alle ({initialProjects.length})
-          </button>
           <button
             className={`${styles.filterBtn} ${activeCategory === "web" ? styles.active : ""}`}
             onClick={() => setActiveCategory("web")}

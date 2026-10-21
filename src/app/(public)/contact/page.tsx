@@ -1,14 +1,10 @@
-// src/app/(public)/contact/page.tsx
-import type { Metadata } from "next";
+import { ContactView } from "@/modules/contact/ui/ContactView";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Kontakt | RoxyNomad",
+  description: "Trete direkt mit mir in Kontakt für Web-Architektur oder Video-Anfragen.",
 };
 
 export default function ContactPage() {
-  return (
-    <div className="container">
-      <h1>Kontakt</h1>
-    </div>
-  );
+  return <ContactView />;
 }

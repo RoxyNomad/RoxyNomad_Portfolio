@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { getPresignedR2UrlAction, createProjectAction, CreateProjectPayload } from "../../infrastructure/admin/admin.actions";
+import { getPresignedR2UrlAction, createProjectAction, CreateProjectPayload } from "../../application/actions/admin.actions";
 
 export function useProjectUpload() {
   const [loading, setLoading] = useState(false);

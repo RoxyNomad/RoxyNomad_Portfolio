@@ -36,6 +36,7 @@ const Navigation = () => {
               Portfolio
             </Link>
           </li>
+          {/*
           <li>
             <Link 
               href="/blog" 
@@ -44,6 +45,7 @@ const Navigation = () => {
               Blog
             </Link>
           </li>
+          */}
 					<li>
             <Link 
               href="/contact" 
