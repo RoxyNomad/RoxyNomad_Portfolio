@@ -1,4 +1,4 @@
-import { StaticProjectRepository } from "@/modules/portfolio/infrastructure/persistence/neon-project.repository";
+import { NeonProjectRepository } from "@/modules/portfolio/infrastructure/persistence/neon-project.repository";
 import { GetProjectsQueryHandler } from "@/modules/portfolio/application/handlers/get-projects.handler";
 import { PortfolioView } from "@/modules/portfolio/ui/PortfolioView";
 
@@ -8,11 +8,9 @@ export const metadata = {
 };
 
 export default async function PortfolioPage() {
-  // CQRS Read Side Resolution:
-  const repository = new StaticProjectRepository();
+  const repository = new NeonProjectRepository();
   const queryHandler = new GetProjectsQueryHandler(repository);
 
-  // Executing Query
   const projects = await queryHandler.execute({ category: "all" });
 
   return <PortfolioView initialProjects={projects} />;

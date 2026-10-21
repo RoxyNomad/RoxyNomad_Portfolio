@@ -23,4 +23,18 @@ export class NeonProjectRepository implements IProjectRepository {
         })
     );
   }
+
+  async save(project: Project): Promise<void> {
+    await db.insert(projectsTable).values({
+      id: project.id,
+      title: project.title,
+      description: project.description,
+      category: project.category,
+      tags: project.tags,
+      imageKey: project.imageSrc,
+      projectUrl: project.projectUrl ?? null,
+      architectureHighlight: project.architectureHighlight ?? null,
+      role: project.role ?? null,
+    });
+  }
 }

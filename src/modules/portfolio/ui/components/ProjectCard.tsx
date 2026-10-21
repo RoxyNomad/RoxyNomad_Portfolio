@@ -8,18 +8,28 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const isVideo = project.category === "video";
+  const isVideoFile = project.imageSrc.endsWith(".mp4") || project.imageSrc.endsWith(".webm");
 
   return (
     <article className={styles.card}>
       <div className={styles.mediaWrapper}>
         {isVideo && <span className={styles.videoBadge}>🎬 Video Project</span>}
 
-        <Image
-          src={project.imageSrc}
-          alt={project.title}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+        {isVideoFile ? (
+          <video
+            src={project.imageSrc}
+            controls
+            preload="metadata"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+        ) : (
+          <Image
+            src={project.imageSrc || "/placeholder.jpg"}
+            alt={project.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        )}
       </div>
 
       <div className={styles.content}>
